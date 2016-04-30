@@ -1,0 +1,227 @@
+
+
+
+
+
+
+
+
+  <head>
+	<meta charset="utf-8">
+	<title>وبسایت آزمایشی</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="jquery.min.js"></script>
+		<script src="script.js"></script>
+		<script src="box.js"></script>
+
+		<style type="text/css">
+			.box a{
+				color: black;
+				//text-shadow: 0px 0px 5px darkgreen;
+				//display: none;
+				text-decoration:none;
+				//width:100%;
+				//height:100%;
+				//padding-top:65px;
+			}
+			.box{
+				width:128px;
+				height:32px;
+				text-align:center;
+				//background:url('images/hand.png') no-repeat;
+				//background-size:100% 100%;
+				margin:auto;
+				//border:1px solid #3db4ff;
+				//box-shadow: 0px 0px 30px 0px lightblue inset;
+				font-size: 13px;
+				display: none;
+				padding:20px 0px -20px 0px;
+
+				//-ms-transform: translate(50px,50px);
+				//-webkit-transform: translate(50px,50px);
+				//transform: translate(50px,50px);
+
+				//-webkit-animation-name: always;
+				//-webkit-animation-duration: 1s;
+				//animation-name: always;
+				//animation-duration: 1s;
+			}
+			.box:hover{
+				//background: transparent url('images/chest-open.png') no-repeat;
+				//border:1px solid darkblue;
+				//border-radius: 400px;
+				//-webkit-animation-name: box-openup;
+				//-webkit-animation-duration: 1s;
+				//animation-name: box-openup;
+				//animation-duration: 1s;
+			}
+
+			@-webkit-keyframes box-openup {
+				from {-ms-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+				to {-ms-transform: rotate(360deg);-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+			}
+			@keyframes box-openup {
+				from {-ms-transform: rotate(0deg);-webkit-transform: rotate(0deg);transform: rotate(0deg);}
+				to {-ms-transform: rotate(360deg);-webkit-transform: rotate(360deg);transform: rotate(360deg);}
+			}
+			/***************** backs to text under chests ********************/
+			.underbox {
+				text-shadow: 0px 0px 10px green;
+				position: relative;
+				-webkit-animation-name: underbox;
+				-webkit-animation-duration: 2s;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-timing-function: linear;
+				animation-name: underbox;
+				animation-duration: 2s;
+				animation-iteration-count: infinite;
+				animation-timing-function: linear;
+			}
+
+			@-webkit-keyframes underbox {
+				0%   {text-shadow: 0px 0px 15px red;}
+				25%  {text-shadow: 0px 0px 15px yellow;}
+				50%  {text-shadow: 0px 0px 15px lightblue;}
+				75%  {text-shadow: 0px 0px 15px green;}
+				100% {text-shadow: 0px 0px 15px red;}
+			}
+
+			@keyframes underbox {
+				0%   {text-shadow: 0px 0px 15px red;}
+				25%  {text-shadow: 0px 0px 15px yellow;}
+				50%  {text-shadow: 0px 0px 15px lightblue;}
+				75%  {text-shadow: 0px 0px 15px green;}
+				100% {text-shadow: 0px 0px 15px red;}
+			}
+			/*****************************************************************/
+		</style>
+		<script>
+$(document).ready(function(){
+		$("#div1").load("full-width-slider.source.html");
+});
+</script>
+
+  </head>
+  <body>
+	<div id="div1" style="padding:0px;margin:0px;font-family:Arial,Verdana;"></div>
+
+	
+
+
+<p style="margin-top:10px;font-size:13px; text-align:center;"><b>کاربر مهمان؛ به</b> <span style="color:#8a5800;">شهر اسلامشهر</span> <b>خوش آمدید. </b> <b style="padding-right:20px">سخن بزرگان:</b> <span style="color:#8a5800;">برای بهترین ایده منتظر نمان ، ایده بهتر را انجام بده ، بهترین نیز به دنبال آن خواهد آمد.</span></p>
+				<div id="title-border" style="padding:0px 0px 13px 0px;">
+				
+				<div id="titles">عناوین <img src="images/arrow.gif" id="arrow"></div>
+	<div id="list" style="position:absolute;">
+		<div class="list"><a href="/">صفحه ی اصلی</a></div>
+		<div class="list"><a href="about.php">درباره‌ی ما</a></div>
+		<div class="list"><a href="support.php">حامیان پروژه</a></div>
+		<div class="list"><a href="resellers.php">شبکه نمایندگان</a></div>
+		<div class="list"><a href="newsblog.php">خبرنامه</a></div>
+		<div class="list"><a href="contact.php">ارتباط با ما</a></div>
+		<div class="list"><a onclick="$('#login').fadeIn('slow');$('#loginin').fadeIn('slow');">ورود اعضا</a></div>
+		<div class="list"><a href="rules.php">قوانین سایت</a></div>
+		<div class="list"><a href="signup.php">سفارش خرید کارت</a></div>
+		<div class="list"><a href="help.php">راهنما</a></div>
+	</div>
+</div>
+				<div id="login" style="width:100%;height:100%;left:0px;top:0px;background:black;z-index:100000;position:fixed;opacity:0.7;display:none;">
+				</div>
+				<div id="loginin" style="position:fixed;width:512px;right:30%;height:512px;top:20%;text-align:center;background:silver;border:1px solid #2a2a2a;border-radius:15px;padding:20px;z-index:1000000;display:none;">
+					<img src="images/x.png" style="cursor:pointer;margin-right:-520px;margin-top:-20px;border-radius:100;width:30px;" onclick="$('#login').fadeOut('slow');$('#loginin').fadeOut('slow');">
+					<h1 style="color:darkgreen;">ورود اعضا</h1>
+					<form action="login.php" method="post">
+						<table style="margin-top:50px;">
+							<tr>
+								<td style="padding:20px 0px;">شناسه</td>
+								<td style="padding:20px 0px;"><input type="text" name="name" style="width:400px;height:35px;padding:5px;"></td>
+							</tr>
+							<tr>
+								<td style="padding:20px 0px;">کلمه‌ی عبور</td>
+								<td style="padding:20px 0px;"><input type="password" name="pass" style="width:400px;height:35px;padding:5px;"></td>
+							</tr>
+							<tr>
+								<td style="padding:5px;">
+									<input type="hidden" name="path" value="/box.php">
+								</td>
+								<td>
+									<button style="padding:10px;float:left;">ورود</button>
+								</td>
+						</table>
+					</form>
+					<hr style="width:75%;margin:30px auto 100px auto;">
+					<a href="signup.php" style="color:black;shadow:0px 0px 3px white;margin:30px auto auto auto; border:1px solid orange; padding:10px 30px; background:#fdfdfd;">ثبت نام کنید</a>
+				</div>
+	<div style="margin:128px auto 0px auto; text-align:center; width:50%; text-align:center;">
+		<div id="malayer0">
+			<!--<img src="images/city.gif" style="margin: -140px auto -200 auto;padding-right:64px; width:100%;" id="malayer-window">-->
+		</div>
+	</div>
+	<div style="position:fixed; width:100%; bottom: 5px; z-index:100;">
+		<table style="margin:auto; position:relative; z-index:100; bottom:0px;">
+			<tr style="vertical-align:bottom;">
+				<td style="height:164px;width:0px;">
+				</td>
+				<td id="box1" style="vertical-align:bottom;padding:0px 10px;">
+					<a href="page4.html"><img src="img/1.jpg"></ta>
+				</td>
+
+				<td id="box2" style="vertical-align:bottom;padding:0px 10px;">
+					<a href="page4.html"><img src="img/2.jpg"></ta>
+				</td>
+
+				<td id="box3" style="vertical-align:bottom;padding:0px 10px;">
+					<a href="page4.html"><img src="img/3.jpg"></ta>
+				</td>
+
+				<td id="box4" style="vertical-align:bottom;padding:0px 10px;">
+					<a href="page4.html"><img src="img/4.jpg"></ta>
+				</td>
+
+				<!--<td id="box5" style="vertical-align:bottom;padding:0px 10px;">
+					<img src="img/5.jpg">
+				</td>-->
+
+			</tr>
+			<tr>
+				<td id="flash" colspan="6" style="text-align:center;" class="underbox">لطفا یکی از صندوقچه‌های فوق را انتخاب فرمایید.
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	</div>
+
+	<!-- <img src="images/namad.png" id="sign"> -->
+	</div>
+
+	<div id="malayer-about-txt" style="position:fixed;width:70%;height:70%;background:white;box-shadow:0px 0px 128px 0px green inset;right:15%;top:10%;text-align:right;border-radius:20px 40px;padding:50px;z-index:10000;overflow:auto;display:none;">
+		<img src="images/x.png" style="width:25px; margin:-20px -20px 0px 0px;" id="x2">
+		<h2 style="text-align:center; margin:30px 0px;">درباره‌ی شهر اسلامشهر</h2>
+
+
+		<div>
+					</div>
+
+
+		
+
+	</div>
+	<div id="bg" style="position:fixed; width:100%; height:100%; background:black; opacity:0.5; top:0px; right:0px; z-index:1000; display:none;">
+	</div>
+
+	<div id="shahid-about-txt" style="position:fixed; width:50%; height:50%; background:darkgray; right:25%; top:25%; text-align:right; border-radius:20px 40px; padding:30px; z-index:10000; display:none;">
+		<img src="images/x.png" style="width:25px; margin:-20px -20px 0px 0px;" id="x">
+		<h2 style="text-align:center; margin:30px 0px;">شهید حاج حسن</h2>
+		<p>حسن تهرانی مقدم (زاده ۶ آبان ۱۳۳۸ تهران - درگذشته ۲۱ آبان ۱۳۹۰ ملارد) از فرماندهان دوران جنگ عراق و ایران و فرمانده جهاد خودکفایی سپاه پاسداران انقلاب اسلامی بود که بر اثر انفجار در پادگان امیرالمؤمنین در شهرستان ملارد به همراه جمعی دیگر از پرسنل دار فانی را وداع گفت.</p>
+		<br>
+<h3>تحصیلات</h3>
+<p>تهرانی مقدم پس از پایان دوره تحصیلات متوسطه در رشته صنایع (برش قطعات صنعتی) در مقطع کاردانی مدرسه عالی تکنیکوم نفیسی (دانشگاه صنعتی خواجه نصیرالدین طوسی) پذیرفته شد. او در سال ۱۳۵۸، در مقطع لیسانس رشته مهندسی صنایع پذیرفته و به اخذ مدرک مهندسی در این رشته موفق شد.</p>
+	</div>
+	<div id="bg" style="position:fixed; width:100%; height:100%; background:black; opacity:0.5; top:0px; right:0px; z-index:1000; display:none;">
+	</div>
+</style>
+	</div>
+  </body>
+</html>
+

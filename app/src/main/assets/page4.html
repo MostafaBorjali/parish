@@ -1,0 +1,616 @@
+
+
+
+
+
+
+
+
+
+
+
+
+<head>
+	<meta  charset="utf-8">
+	<title>وبسایت آزمایشی</title>
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	
+	<script src="jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="kharid.js"></script>
+	<style>
+		.div-gerd{
+			border: 1px solid white;
+			width: 100%;
+			height: auto;
+			border-radius: 50px;
+			text-align: center;
+			float: right;
+			margin: 1px;
+		}
+		.inserted{
+			display: none;
+			float: right;
+		}
+		.insert{
+			cursor: pointer;
+		}
+		.insert:hover div{
+			display: block;
+		}
+		#talaar{
+			display: none;
+		}
+		#top-gerd td{
+			padding:1px;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:link {
+			color: black;
+		}
+		a:visited {
+			color: black;
+		}
+		a:hover {
+			color: black;
+		}
+		a:active {
+			color: black;
+		}
+
+.text-slider {
+	position: relative;
+	overflow: hidden;
+}
+
+.text-slider ul {
+	position: relative;
+	list-style: none;
+	width: 400px;
+}
+
+.text-slider ul li {
+	width: 400px;
+	position: relative;
+	display: block;
+	/*float: left;*/
+	text-align: center;
+	color: black;
+}
+</style>
+
+<script>
+jQuery(document).ready(function ($) {
+
+	setInterval(function () {
+		moveRight();
+	}, 5000);
+
+  
+	var slideCount = $('#text-slider1 ul li').length;
+	var slideWidth = $('#text-slider1 ul li').width();
+	var slideHeight = $('#text-slider1 ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#text-slider1').css({ width: slideWidth, height: slideHeight });
+	
+	$('#text-slider1 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+	$('#text-slider1 ul li:last-child').prependTo('#text-slider1 ul');
+
+	function moveLeft() {
+		$('#text-slider1 ul').animate({
+			left: + slideWidth
+		}, 200, function () {
+			$('#text-slider1 ul li:last-child').prependTo('#text-slider1 ul');
+			$('#text-slider1 ul').css('left', '');
+		});
+	};
+
+	function moveRight() {
+		$('#text-slider1 ul').animate({
+			left: - slideWidth
+		}, 200, function () {
+			$('#text-slider1 ul li:first-child').appendTo('#text-slider1 ul');
+			$('#text-slider1 ul').css('left', '');
+		});
+	};
+}); 
+
+
+
+jQuery(document).ready(function ($) {
+	setInterval(function () {
+		moveRight();
+	}, 5000);
+
+  
+	var slideCount = $('#text-slider2 ul li').length;
+	var slideWidth = $('#text-slider2 ul li').width();
+	var slideHeight = $('#text-slider2 ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#text-slider2').css({ width: slideWidth, height: slideHeight });
+	
+	$('#text-slider2 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+	$('#text-slider2 ul li:last-child').prependTo('#text-slider2 ul');
+
+	function moveLeft() {
+		$('#text-slider2 ul').animate({
+			left: + slideWidth
+		}, 200, function () {
+			$('#text-slider2 ul li:last-child').prependTo('#text-slider2 ul');
+			$('#text-slider2 ul').css('left', '');
+		});
+	};
+
+	function moveRight() {
+		$('#text-slider2 ul').animate({
+			left: - slideWidth
+		}, 200, function () {
+			$('#text-slider2 ul li:first-child').appendTo('#text-slider2 ul');
+			$('#text-slider2 ul').css('left', '');
+		});
+	};
+}); 
+
+
+
+jQuery(document).ready(function ($) {
+	setInterval(function () {
+		moveRight();
+	}, 5000);
+
+  
+	var slideCount = $('#text-slider3 ul li').length;
+	var slideWidth = $('#text-slider3 ul li').width();
+	var slideHeight = $('#text-slider3 ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#text-slider3').css({ width: slideWidth, height: slideHeight });
+	
+	$('#text-slider3 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+	$('#text-slider3 ul li:last-child').prependTo('#text-slider3 ul');
+
+	function moveLeft() {
+		$('#text-slider3 ul').animate({
+			left: + slideWidth
+		}, 200, function () {
+			$('#text-slider3 ul li:last-child').prependTo('#text-slider3 ul');
+			$('#text-slider3 ul').css('left', '');
+		});
+	};
+
+	function moveRight() {
+		$('#text-slider3 ul').animate({
+			left: - slideWidth
+		}, 200, function () {
+			$('#text-slider3 ul li:first-child').appendTo('#text-slider3 ul');
+			$('#text-slider3 ul').css('left', '');
+		});
+	};
+}); 
+
+
+
+jQuery(document).ready(function ($) {
+	setInterval(function () {
+		moveRight();
+	}, 5000);
+
+  
+	var slideCount = $('#text-slider4 ul li').length;
+	var slideWidth = $('#text-slider4 ul li').width();
+	var slideHeight = $('#text-slider4 ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#text-slider4').css({ width: slideWidth, height: slideHeight });
+	
+	$('#text-slider4 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+	$('#text-slider4 ul li:last-child').prependTo('#text-slider4 ul');
+
+	function moveLeft() {
+		$('#text-slider4 ul').animate({
+			left: + slideWidth
+		}, 200, function () {
+			$('#text-slider4 ul li:last-child').prependTo('#text-slider4 ul');
+			$('#text-slider4 ul').css('left', '');
+		});
+	};
+
+	function moveRight() {
+		$('#text-slider4 ul').animate({
+			left: - slideWidth
+		}, 200, function () {
+			$('#text-slider4 ul li:first-child').appendTo('#text-slider4 ul');
+			$('#text-slider4 ul').css('left', '');
+		});
+	};
+});
+
+
+$document.ready(function(){
+	$('.bxslider').bxSlider({
+		auto: true,
+		autoControls: true
+	});
+});
+</script>
+<script src="jquery.bxslider.min.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.bxslider.css">
+</head>
+
+
+
+<body>
+
+
+
+
+<p style="margin-top:10px;font-size:13px; text-align:center;"><b>کاربر مهمان؛ به</b> <span style="color:#8a5800;">بخش خرید با تخفیف ویژه</span> <b>خوش آمدید. </b> <b style="padding-right:20px">سخن بزرگان:</b> <span style="color:#8a5800;">بهترین اشخاص کسانی هستند که اگر از آن ها تعریف کردید خجل شوند و اگر بد گفتید سکوت کنند.</span></p>
+
+
+	<div id="bg" style="width:100%;height:100%;top:0px;left:0px;background:lightgray;opacity:0.9;position:fixed;z-index:10000;display:none;"></div>
+	<img src="images/lens.png" id="lens" width="1000" height="588" border="0" usemap="#map" style="opacity:0.9;position:absolute;left:0px;top:10px;z-index:100000000;display:none;">
+	<div id="look" style="width:256px;text-align:center;color:white;position:absolute;left:570px;top:180px;z-index:10000000000000;display:none;">
+		<h2 style="margin-top:-15;margin-bottom:20px;">جستجوی پیشرفته</h2>
+		<p style="margin-top:3px;">صنف مورد نظر را از کادر اول انتخاب کنید، یا در کادر دوم کلمه ی کلیدی مورد نظر خود را جستجوی کنید.</p>
+		<table style="color:white;">
+			<tr>
+				<td>صنف مورد نظر:</td>
+				<td><input style="width:128px;border-radius:5px 2px;box-shadow:0px 0px 10px 0px gray inset;margin-top:2px;"></td>
+			</tr>
+			<tr>
+				<td>کالا یا خدمات:</td>
+				<td><input style="width:128px;border-radius:5px 2px;box-shadow:0px 0px 10px 0px gray inset;margin-top:2px;"></td>
+			</tr>
+			<tr>
+				<td>مدیر صنف:</td>
+				<td><input style="width:128px;border-radius:5px 2px;box-shadow:0px 0px 10px 0px gray inset;margin-top:2px;"></td>
+			</tr>
+			<tr>
+				<td>نام مرکز صنفی:</td>
+				<td><input style="width:128px;border-radius:5px 2px;box-shadow:0px 0px 10px 0px gray inset;margin-top:2px;"></td>
+			</tr>
+			<tr>
+				<td>وبسایت صنف:</td>
+				<td><input style="width:128px;border-radius:5px 2px;box-shadow:0px 0px 10px 0px gray inset;margin-top:2px;"></td>
+			</tr>
+		</table>
+		<button style="margin-top:2px;border-radius:5px 2px;">جستجو</button>
+	<img src="images/x.png" id="x" style="position:fixed; top:160px;left:800px;width:32px;z-index:10000000000;cursor:pointer;">
+	</div>
+
+<map name="map">
+<area shape="poly" coords="475,267,478,256,501,258,508,221,546,158,586,121,638,95,700,86,757,92,804,111,848,144,878,181,897,221,909,265,910,316,901,352,890,383,867,421,827,461,780,485,729,498,659,495,597,473,561,443,533,410,517,382,502,339,499,321,479,322,472,313,0,311,0,588,1000,588,1000,0,0,0,0,267" target="other" id="other">
+</map>
+
+
+
+
+				<div id="login" style="width:100%;height:100%;background:black;z-index:-100000;position:fixed;opacity:0.7;display:none;">
+				</div>
+				<div id="loginin" style="width:100%;height:100%;top:0px;text-align:center;background:silver;border:1px solid #2a2a2a;border-radius:15px;padding:20px;z-index:1000000;display:none;">
+					<img src="images/x.png" style="cursor:pointer;margin-right:-520px;margin-top:-20px;border-radius:100;width:30px;" onclick="$('#login').fadeOut('slow');$('#loginin').fadeOut('slow');">
+					<h1 style="color:darkgreen;">ورود اعضا</h1>
+					<form action="page5.html" method="post">
+						<table style="margin-top:50px;">
+							<tr>
+								<td style="padding:20px 0px;">شناسه</td>
+								<td style="padding:20px 0px;"><input type="text" name="name" style="width:400px;height:35px;padding:5px;"></td>
+							</tr>
+							<tr>
+								<td style="padding:20px 0px;">کلمه‌ی عبور</td>
+								<td style="padding:20px 0px;"><input type="password" name="pass" style="width:400px;height:35px;padding:5px;"></td>
+							</tr>
+							<tr>
+								<td style="padding:5px;">
+									<input type="hidden" name="path" value="/kharid.php">
+								</td>
+								<td>
+									<button style="padding:10px;float:right;">ورود</button>
+								</td>
+						</table>
+					</form>
+					<hr style="width:75%;margin:30px auto 100px auto;">
+					<a href="signup.php" style="color:black;shadow:0px 0px 3px white;margin:30px auto auto auto; border:1px solid orange; padding:10px 30px; background:#fdfdfd;">ثبت نام کنید</a>
+				</div>				
+
+	<table style="margin:20px;">
+		<tr>
+			<td id="total" style="color:black; width:100%; vertical-align:top; padding:5px;z-index:100;position:relative; margin:auto;text-align: center;">
+
+					<a href="temp1.html"><img src='img/icon/23.png' id='23' class='div-gerd' style='background:#98ff98;'><img src='img/icon/1.png' id='1' class='div-gerd' style='background:#d7ff6f;'><img src='img/icon/2.png' id='2' class='div-gerd' style='background:#feff80;'><img src='img/icon/3.png' id='3' class='div-gerd' style='background:#ffe789;'><img src='img/icon/4.png' id='4' class='div-gerd' style='background:#ffbe6a;'><img src='img/icon/5.png' id='5' class='div-gerd' style='background:#ff945f;'><img src='img/icon/6.png' id='6' class='div-gerd' style='background:#ff7e7e;'><img src='img/icon/7.png' id='7' class='div-gerd' style='background:#ff8abb;'><img src='img/icon/8.png' id='8' class='div-gerd' style='background:#ff79e3;'><img src='img/icon/9.png' id='9' class='div-gerd' style='background:#e487ff;'><img src='img/icon/10.png' id='10' class='div-gerd' style='background:#d9a9ff;'><img src='img/icon/11.png' id='11' class='div-gerd' style='background:#bca0ff;'><img src='img/icon/12.png' id='12' class='div-gerd' style='background:#a9c7ff;'><img src='img/icon/13.png' id='13' class='div-gerd' style='background:#a6deff;'><img src='img/icon/14.png' id='14' class='div-gerd' style='background:#91f4ff;'><img src='img/icon/15.png' id='15' class='div-gerd' style='background:#97ffdf;'><img src='img/icon/16.png' id='16' class='div-gerd' style='background:#8fffc2;'><img src='img/icon/17.png' id='17' class='div-gerd' style='background:#d7ff6f;'><img src='img/icon/18.png' id='18' class='div-gerd' style='background:#feff80;'><img src='img/icon/19.png' id='19' class='div-gerd' style='background:#ffbe6a;'><img src='img/icon/20.png' id='20' class='div-gerd' style='background:#ff945f;'><img src='img/icon/21.png' id='21' class='div-gerd' style='background:#ff7e7e;'><img src='img/icon/22.png' id='22' class='div-gerd' style='background:#ff8abb;'><img src='img/icon/23.png' id='23' class='div-gerd' style='background:#98ff98;'><img src='img/icon/24.png' id='24' class='div-gerd' style='background:#bca0ff;'><img src='img/icon/25.png' id='25' class='div-gerd' style='background:#d9a9ff;'><img src='img/icon/26.png' id='26' class='div-gerd' style='background:#e487ff;'><img src='img/icon/27.png' id='27' class='div-gerd' style='background:#ff79e3;'><img src='img/icon/28.png' id='28' class='div-gerd' style='background:#ff8abb;'><img src='img/icon/29.png' id='29' class='div-gerd' style='background:#ff7e7e;'><img src='img/icon/31.png' id='30' class='div-gerd' style='background:#ffbe6a;'><img src='img/icon/32.png' id='32' class='div-gerd' style='background:#feff80;'><img src='img/icon/33.png' id='32' class='div-gerd' style='background:#ffe789;'><img src='img/icon/34.png' id='33' class='div-gerd' style='background:#ffbe6a;'></a>
+</td>
+					<script src="kharid.js"></script>
+					<style type="text/css">
+					.div-gerd{
+						text-align: center;
+						margin: auto;
+						width:10%;
+						border-radius: 50%;
+						margin:2%;
+						border: 10px solid white;
+						border-right: 10px solid black;
+						border-left: 10px solid black;
+						box-shadow: 0px 0px 30px 0px white;
+					}
+					</style>
+
+
+
+
+
+<div onclick="$('#login').fadeIn('slow');$('#loginin').fadeIn('slow');$(this).fadeOut('slow');" id="select" style="width:90%;height:100%;position:absolute;top:0px;right:10px;background:purple;display:none;z-index:10000000;padding:100px;color:white;">
+                                    <img class="photogram" src="img/icon/23.png">
+                                    <h2 class="header">ویژه زوجین</h2>
+                                    <ul style="float:right; margin-left:15px;">
+                                        <li style="cursor:pointer;" id="a1">لوازم خانگی</li>
+                                        <li style="cursor:pointer;" id="a2">زناشویی</li>
+                                        <li style="cursor:pointer;" id="a3">زیورالات</li>
+                                        <li style="cursor:pointer;" id="a4">لوازم بهداشتی</li>
+                                        <li style="cursor:pointer;" id="a5">مبلمان و سرویس خواب</li>
+                                        <li style="cursor:pointer;" id="a6">آموزش</li>
+                                    </ul>
+                                    <ul style="float:right; margin-left:15px;">
+                                        <li style="cursor:pointer;" id="a7"><p onclick="$('#login').fadeIn('slow');$('#loginin').fadeIn('slow');">باغ و تالار پذیرایی</p></li>
+                                        <li style="cursor:pointer;" id="a8">خدمات و همایش و سمینار</li>
+                                        <li style="cursor:pointer;" id="a9">محضر ازدواج و طلاق</li>
+                                        <li style="cursor:pointer;" id="a10">کرایه ملزومات مجالس و مراسم</li>
+                                        <li style="cursor:pointer;" id="a11">خدمات جشن عقد، ازدواج ، تولّد</li>
+                                        <li style="cursor:pointer;" id="a12">گل فروشی و تزئین اتومبیل</li>
+                                        <li style="cursor:pointer;" id="a13">آتلیه عکاسی و فیلمبرداری</li>
+                                        <li style="cursor:pointer;" id="a14">کرایه اتومبیل</li>
+                                        <li style="cursor:pointer;" id="a15">اجرای موزیک</li>
+                                        <li style="cursor:pointer;" id="a16">کارت دعوت</li>
+                                        <li style="cursor:pointer;" id="a17">مولودی خوانی و مرثیه سرایی</li>
+                                        <li style="cursor:pointer;" id="a18">البسه مجلسی</li>
+                                    </ul>
+                                    <ul style="float:right; margin-left:15px;">
+                                        <li style="cursor:pointer;" id="a19">کلینیک های زیبایی بانوان</li>
+                                        <li style="cursor:pointer;" id="a20">سالن ها و خدمات پیرایشی آقایان</li>
+                                        <li style="cursor:pointer;" id="a21">بوتیک و محصولات آرایشی و بهداشتی</li>
+                                        <li style="cursor:pointer;" id="a22">آموزشگاه آرایشی بانوان</li>
+                                        <li style="cursor:pointer;" id="a23">آموزشگاه پیرایشی آقایان</li>
+                                        <li style="cursor:pointer;" id="a24">سایر خدمات</li>
+                                    </ul>
+</div>
+
+
+
+
+
+<table style="margin-right:-2;">
+	<tr>
+						<td style="color:black; vertical-align:top;">
+<script src="../imagelightbox.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../imagelightbox.css"><div class="div-content" id="div-content-1" style="padding:5px; height:448px; width:100%; background:#d7ff6f;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/1.png">
+			<h2 class="header">آموزشگاه ها</h2><ul style="float:right;"><li style="cursor:pointer;" id="a1"><p id="z1">مدارس دولتی</p></li><li style="cursor:pointer;" id="a2"><p id="z2">مدارس غیر انتفاعی</p></li><li style="cursor:pointer;" id="a3"><p id="z3">آموزشگاهای فنی و حرفه ای</p></li><li style="cursor:pointer;" id="a4"><p id="z4">پیش دبستانی و مهد کودک</p></li><li style="cursor:pointer;" id="a5"><p id="z5">آرایش</p></li><li style="cursor:pointer;" id="a6"><p id="z6">پیرایش</p></li><li style="cursor:pointer;" id="a7"><p id="z7">آشپزی و شیرینی پزی</p></li><li style="cursor:pointer;" id="a8"><p id="z8">آموزشگاه خیاطی</p></li><li style="cursor:pointer;" id="a9"><p id="z9">آموزشگاه رانندگی</p></li><li style="cursor:pointer;" id="a10"><p id="z10">آموزشگاههای زبانهای خارجی</p></li><li style="cursor:pointer;" id="a11"><p id="z11">آموزشگاههای علمی و تدریس خصوصی</p></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a12"><p id="z12">آموزشگاههای هنری</p></li><li style="cursor:pointer;" id="a13"><p id="z13">آموزشگاه کامپیوتر</p></li><li style="cursor:pointer;" id="a14"><p id="z14">آموزشگاه موسیقی</p></li><li style="cursor:pointer;" id="a15"><p id="z15">آموزشگاه بافندگی</p></li><li style="cursor:pointer;" id="a16"><p id="z16">آموزشگاه قالی بافی</p></li><li style="cursor:pointer;" id="a17"><p id="z17">آموزشگاه علمی و کنکوری</p></li><li style="cursor:pointer;" id="a18"><p id="z18">آموزشگاه سینمایی</p></li><li style="cursor:pointer;" id="a19"><p id="z19">آموزشگاه عکاسی و فیلمبرداری</p></li><li style="cursor:pointer;" id="a20"><p id="z20">آموزشگاه آموزش از راه دور</p></li></ul></div></div><div class="div-content" id="div-content-2" style="padding:5px; height:448px; width:100%; background:#feff80;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/2.png">
+			<h2 class="header">خدمات خودرویی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a21"><p id="z21">نمایشگاه اتومبیل های سبک</p></li><li style="cursor:pointer;" id="a22"><p id="z22">نمایشگاه اتومبیل های سنگین</p></li><li style="cursor:pointer;" id="a23"><p id="z23">نمایندگی های مجاز</p></li><li style="cursor:pointer;" id="a24"><p id="z24">لوازم یدکی</p></li><li style="cursor:pointer;" id="a25"><p id="z25">تزئینات خودرو</p></li><li style="cursor:pointer;" id="a26"><p id="z26">تعمیرگاهی</p></li><li style="cursor:pointer;" id="a27"><p id="z27">اتو سرویس</p></li><li style="cursor:pointer;" id="a28"><p id="z28">خدمات اسپرت و لاستیک</p></li><li style="cursor:pointer;" id="a29"><p id="z29">نمایشگاه موتور سیکلت</p></li><li style="cursor:pointer;" id="a30"><p id="z30">لوازم یدکی موتور</p></li><li style="cursor:pointer;" id="a31"><p id="z31">تعمیرگاهی</p></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a32"><p id="z32">تزئینات موتور</p></li><li style="cursor:pointer;" id="a33"><p id="z33">دوچرخه فروشی</p></li><li style="cursor:pointer;" id="a34"><p id="z34">دوچرخه سازی</p></li></ul></div></div><div class="div-content" id="div-content-3" style="padding:5px; height:448px; width:100%; background:#ffe789;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/3.png">
+			<h2 class="header">فروشگاه ها</h2><ul style="float:right;"><li style="cursor:pointer;" id="a35"><p id="z35">فروشگاههای تعاونی مصرف</p></li><li style="cursor:pointer;" id="a36"><p id="z36">فروشگاههای زنجیره ای</p></li><li style="cursor:pointer;" id="a37"><p id="z37">فروشگاه های هایپر</p></li></ul></div></div><div class="div-content" id="div-content-4" style="padding:5px; height:448px; width:100%; background:#ffbe6a;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/4.png">
+			<h2 class="header">اغذیه</h2><ul style="float:right;"><li style="cursor:pointer;" id="a38"><p id="z38">رستوران</p></li><li style="cursor:pointer;" id="a39"><p id="z39">تالار</p></li><li style="cursor:pointer;" id="a40"><p id="z40">کافی شاپ</p></li><li style="cursor:pointer;" id="a41"><p id="z41">سفره خانه</p></li><li style="cursor:pointer;" id="a42"><p id="z42">فست فود</p></li><li style="cursor:pointer;" id="a43"><p id="z43">تهیه غذا ، کترینگ</p></li><li style="cursor:pointer;" id="a44"><p id="z44">چلو کبابی</p></li><li style="cursor:pointer;" id="a45"><p id="z45">کبابی و جگرکی</p></li><li style="cursor:pointer;" id="a46"><p id="z46">کلّه پزی</p></li><li style="cursor:pointer;" id="a47"><p id="z47">سفره خانه و دیزی سرا</p></li><li style="cursor:pointer;" id="a48"><p id="z48">آبمیوه ، بستنی</p></li></ul><ul style='float:right;margin-right:25px;'></ul></div></div><div class="div-content" id="div-content-5" style="padding:5px; height:448px; width:100%; background:#ff945f;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/5.png">
+			<h2 class="header">کادویی و دکوری</h2><ul style="float:right;"><li style="cursor:pointer;" id="a49"><p id="z49">طلا و جواهرات</p></li><li style="cursor:pointer;" id="a50"><p id="z50">بدلیجات و نقره سرا</p></li><li style="cursor:pointer;" id="a51"><p id="z51">اجناس کادویی</p></li><li style="cursor:pointer;" id="a52"><p id="z52">اسباب بازی فروشی</p></li><li style="cursor:pointer;" id="a53"><p id="z53">صنایع دستی</p></li><li style="cursor:pointer;" id="a54"><p id="z54">فروش و تعمیر ساعت</p></li></ul></div></div><div class="div-content" id="div-content-6" style="padding:5px; height:448px; width:100%; background:#ff7e7e;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/6.png">
+			<h2 class="header">پوشاک و البسه</h2><ul style="float:right;"><li style="cursor:pointer;" id="a55"><p id="z55">گالری پوشاک مردانه</p></li><li style="cursor:pointer;" id="a56"><p id="z56">گالری پوشاک زنانه</p></li><li style="cursor:pointer;" id="a57"><p id="z57">گالری پوشاک بچه گانه</p></li><li style="cursor:pointer;" id="a58"><p id="z58">تولیدی پوشاک</p></li><li style="cursor:pointer;" id="a59"><p id="z59">پارچه فروشی</p></li><li style="cursor:pointer;" id="a60"><p id="z60">خیاطی</p></li><li style="cursor:pointer;" id="a61"><p id="z61">لوازم خیاطی و بافتنی</p></li><li style="cursor:pointer;" id="a62"><p id="z62">کیف و کفش</p></li><li style="cursor:pointer;" id="a63"><p id="z63">مزون و لباس عروس</p></li><li style="cursor:pointer;" id="a64"><p id="z64">خدمات رنگرزی ، چاپ</p></li><li style="cursor:pointer;" id="a65"><p id="z65">خشکشویی</p></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a66"><p id="z66">ایمنی و آتش نشانی</p></li></ul></div></div><div class="div-content" id="div-content-7" style="padding:5px; height:448px; width:100%; background:#ff8abb;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/7.png">
+			<h2 class="header">اداری و مالی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a67"><p id="z67">موسسات مالی و اعتباری</p></li><li style="cursor:pointer;" id="a68"><p id="z68">صرافی ها</p></li><li style="cursor:pointer;" id="a69"><p id="z69">ثبت و رتبه بندی شرکتها</p></li><li style="cursor:pointer;" id="a70"><p id="z70">حسابداری و حسابرسی</p></li><li style="cursor:pointer;" id="a71"><p id="z71">ماشینهای اداری و محاسباتی</p></li></ul></div></div><div class="div-content" id="div-content-8" style="padding:5px; height:448px; width:100%; background:#ff79e3;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/8.png">
+			<h2 class="header">خدمات شهری</h2><ul style="float:right;"><li style="cursor:pointer;" id="a72"><p id="z72">پلیس + 10</p></li><li style="cursor:pointer;" id="a73"><p id="z73">دفاتر ازدواج و طلاق</p></li><li style="cursor:pointer;" id="a74"><p id="z74">دفاتر اسناد رسمی</p></li><li style="cursor:pointer;" id="a75"><p id="z75">دفاتر خدمات پستی</p></li><li style="cursor:pointer;" id="a76"><p id="z76">دفاتر پیشخوان دولت</p></li><li style="cursor:pointer;" id="a77"><p id="z77">دفاتر وکالت</p></li><li style="cursor:pointer;" id="a78"><p id="z78">دارالترجمه</p></li><li style="cursor:pointer;" id="a79"><p id="z79">آسایشگاهها</p></li></ul></div></div><div class="div-content" id="div-content-9" style="padding:5px; height:448px; width:100%; background:#e487ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/9.png">
+			<h2 class="header">ساختمان و صنایع وابسته</h2><ul style="float:right;"><li style="cursor:pointer;" id="a80"><p id="z80">شرکتهای پیمانکاری</p></li><li style="cursor:pointer;" id="a81"><p id="z81">ایزو گام و عایق رطوبتی</p></li><li style="cursor:pointer;" id="a82"><p id="z82">خدمات آسانسور</p></li><li style="cursor:pointer;" id="a83"><p id="z83">تأسیسات</p></li><li style="cursor:pointer;" id="a84"><p id="z84">داربست</p></li><li style="cursor:pointer;" id="a85"><p id="z85">ابزار آلات ساختمانی</p></li><li style="cursor:pointer;" id="a86"><p id="z86">ابزار آلات ساختمانی</p></li><li style="cursor:pointer;" id="a87"><p id="z87">درب و پنجره</p></li><li style="cursor:pointer;" id="a88"><p id="z88">کابینت و تجهیزات آشپزخانه</p></li><li style="cursor:pointer;" id="a89"><p id="z89">کرایه ماشین آلات</p></li><li style="cursor:pointer;" id="a90"><p id="z90">دکوراسیون و تزئنات</p></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a91"><p id="z91">سیم های هوشمند ساختمانی</p></li><li style="cursor:pointer;" id="a92"><p id="z92">نما کاری</p></li><li style="cursor:pointer;" id="a93"><p id="z93">لوازم بهداشتی</p></li></ul></div></div><div class="div-content" id="div-content-10" style="padding:5px; height:448px; width:100%; background:#d9a9ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/10.png">
+			<h2 class="header">لوازم خانگی و اداری</h2><ul style="float:right;"><li style="cursor:pointer;" id="a94"><p id="z94">فروشگاه لوازم خانگی</p></li><li style="cursor:pointer;" id="a95"><p id="z95">فروشگاه لوازم اداری</p></li><li style="cursor:pointer;" id="a96"><p id="z96">فروشگاه لوازم پلاستیکی</p></li><li style="cursor:pointer;" id="a97"><p id="z97">مبلمان و سرویس خواب</p></li><li style="cursor:pointer;" id="a98"><p id="z98">فرش و موکت</p></li><li style="cursor:pointer;" id="a99"><p id="z99">پرده سرا</p></li><li style="cursor:pointer;" id="a100"><p id="z100">سمساری</p></li><li style="cursor:pointer;" id="a101"><p id="z101">تعمیر و خدمات لوازم خانگی</p></li><li style="cursor:pointer;" id="a102"><p id="z102">کرایه‌ی لوازم خانگی</p></li></ul></div></div><div class="div-content" id="div-content-11" style="padding:5px; height:448px; width:100%; background:#bca0ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/11.png">
+			<h2 class="header">تلفن همراه</h2><ul style="float:right;"><li style="cursor:pointer;" id="a103"><p id="z103">فروشگاه موبایل و لوازم جانبی</p></li><li style="cursor:pointer;" id="a104"><p id="z104">فروشگاه دوربین های مدار بسته و امنیتی</p></li><li style="cursor:pointer;" id="a105"><p id="z105">تعمیرات و خدمات پس از فروش</p></li></ul></div></div><div class="div-content" id="div-content-12" style="padding:5px; height:448px; width:100%; background:#a9c7ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/12.png">
+			<h2 class="header">حمل و نقل</h2><ul style="float:right;"><li style="cursor:pointer;" id="a106"><p id="z106">اتوبار و حمل و نقل سبک</p></li><li style="cursor:pointer;" id="a107"><p id="z107">باربری و حمل و نقل سنگین</p></li><li style="cursor:pointer;" id="a108"><p id="z108">حمل و نقل بین الملی</p></li><li style="cursor:pointer;" id="a109"><p id="z109">مسافربری و حمل و نقل جاده ای</p></li><li style="cursor:pointer;" id="a110"><p id="z110">تاکسی تلفنی</p></li><li style="cursor:pointer;" id="a111"><p id="z111">پیک موتوری</p></li></ul></div></div><div class="div-content" id="div-content-13" style="padding:5px; height:448px; width:100%; background:#a6deff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/13.png">
+			<h2 class="header">فرهنگی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a112"><p id="z112">خانه های فرهنگ ( فرهنگسرا)</p></li><li style="cursor:pointer;" id="a113"><p id="z113">نگارستانها</p></li><li style="cursor:pointer;" id="a114"><p id="z114">خبر گزاریها</p></li><li style="cursor:pointer;" id="a115"><p id="z115">مجموعه های فرهنگی</p></li><li style="cursor:pointer;" id="a116"><p id="z116">دارالترجمه و مترجمین</p></li><li style="cursor:pointer;" id="a117"><p id="z117">نشریات</p></li><li style="cursor:pointer;" id="a118"><p id="z118">کتاب فروشی</p></li><li style="cursor:pointer;" id="a119"><p id="z119">ویدئو کلوپ</p></li></ul></div></div><div class="div-content" id="div-content-14" style="padding:5px; height:448px; width:100%; background:#91f4ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/14.png">
+			<h2 class="header">آموزشی تحصیلی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a120"><p id="z120">نوشت افزار و لوازم التحریر</p></li><li style="cursor:pointer;" id="a121"><p id="z121">فروشگاه نرم افزارهای درسی و کمک آموزشی</p></li></ul></div></div><div class="div-content" id="div-content-15" style="padding:5px; height:448px; width:100%; background:#97ffdf;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/15.png">
+			<h2 class="header">چاپ و تبلیغات</h2><ul style="float:right;"><li style="cursor:pointer;" id="a122"><p id="z122">خدمات و طراحی و گرافیک</p></li><li style="cursor:pointer;" id="a123"><p id="z123">تکثیر چاپخانه ای</p></li><li style="cursor:pointer;" id="a124"><p id="z124">تایپ و تکثیر جزئی</p></li><li style="cursor:pointer;" id="a125"><p id="z125">تابلو سازی</p></li><li style="cursor:pointer;" id="a126"><p id="z126">اشیاء و هدایای تبلیغاتی</p></li><li style="cursor:pointer;" id="a127"><p id="z127">کلیشه و مهر</p></li><li style="cursor:pointer;" id="a128"><p id="z128">صحافی</p></li><li style="cursor:pointer;" id="a129"><p id="z129">لیتوگرافی</p></li><li style="cursor:pointer;" id="a130"><p id="z130">تبلیغات محیطی</p></li></ul></div></div><div class="div-content" id="div-content-16" style="padding:5px; height:448px; width:100%; background:#8fffc2;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/16.png">
+			<h2 class="header">مشاوره</h2><ul style="float:right;"><li style="cursor:pointer;" id="a131"><p id="z131">ازدواج</p></li><li style="cursor:pointer;" id="a132"><p id="z132">حقوقی</p></li><li style="cursor:pointer;" id="a133"><p id="z133">تحصیلی</p></li><li style="cursor:pointer;" id="a134"><p id="z134">ژنتیک</p></li><li style="cursor:pointer;" id="a135"><p id="z135">کاریابی</p></li><li style="cursor:pointer;" id="a136"><p id="z136">بازرگانی</p></li><li style="cursor:pointer;" id="a137"><p id="z137">شغلی</p></li><li style="cursor:pointer;" id="a138"><p id="z138">مهندسی</p></li><li style="cursor:pointer;" id="a139"><p id="z139">روانشناختی</p></li><li style="cursor:pointer;" id="a140"><p id="z140">کشاورزی</p></li><li style="cursor:pointer;" id="a141"><p id="z141">املاک</p></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a142"><p id="z142">تغذیه</p></li><li style="cursor:pointer;" id="a143"><p id="z143">ورزشی</p></li></ul></div></div><div class="div-content" id="div-content-17" style="padding:5px; height:448px; width:100%; background:#d7ff6f;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/17.png">
+			<h2 class="header">حیوانات خانگی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a144"><p id="z144">مراکز خرید و فروش</p></li><li style="cursor:pointer;" id="a145"><p id="z145">کلینیک دامپزشکی</p></li><li style="cursor:pointer;" id="a146"><p id="z146">داروخانه</p></li><li style="cursor:pointer;" id="a147"><p id="z147">تجهیزات و لوازم نگهداری</p></li></ul></div></div><div class="div-content" id="div-content-18" style="padding:5px; height:448px; width:100%; background:#feff80;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/18.png">
+			<h2 class="header">خدمات در منزل</h2><ul style="float:right;"><li style="cursor:pointer;" id="a148"><p id="z148">تدریس خصوصی</p></li><li style="cursor:pointer;" id="a149"><p id="z149">امور نظافتی و مراقبتی</p></li><li style="cursor:pointer;" id="a150"><p id="z150">کف سابی و دیوار شویی</p></li><li style="cursor:pointer;" id="a151"><p id="z151">قالی شویی و شستشوی مبلمان</p></li></ul></div></div><div class="div-content" id="div-content-19" style="padding:5px; height:448px; width:100%; background:#ffbe6a;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/19.png">
+			<h2 class="header">خدمات صنعتی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a152"><p id="z152">آهن آلات</p></li><li style="cursor:pointer;" id="a153"><p id="z153">ضایعات</p></li><li style="cursor:pointer;" id="a154"><p id="z154">ابزار یراق</p></li><li style="cursor:pointer;" id="a155"><p id="z155">بسته بندی کالا</p></li><li style="cursor:pointer;" id="a156"><p id="z156">تراشکاری و سری سازی</p></li><li style="cursor:pointer;" id="a157"><p id="z157">صنایع فلز و آلومینیم</p></li><li style="cursor:pointer;" id="a158"><p id="z158">صنایع چوبی</p></li><li style="cursor:pointer;" id="a159"><p id="z159">کارتن سازی</p></li><li style="cursor:pointer;" id="a160"><p id="z160">کانکس، کانتینر و کاروان</p></li></ul></div></div><div class="div-content" id="div-content-20" style="padding:5px; height:448px; width:100%; background:#ff945f;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/20.png">
+			<h2 class="header">املاک</h2><ul style="float:right;"><li style="cursor:pointer;" id="a161"><p id="z161">مشاورین املاک</p></li><li style="cursor:pointer;" id="a162"><p id="z162">انجام امور اداری ثبتی ، شهرداری و ...</p></li><li style="cursor:pointer;" id="a163"><p id="z163">آگهی مناقصه و مزایده</p></li></ul></div></div><div class="div-content" id="div-content-21" style="padding:5px; height:448px; width:100%; background:#ff7e7e;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/21.png">
+			<h2 class="header">مواد غذایی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a164"><p id="z164">قنادی و شیرینی پزی</p></li><li style="cursor:pointer;" id="a165"><p id="z165">عصاره فروشی و عرقیجات</p></li><li style="cursor:pointer;" id="a166"><p id="z166">دم نوش و ترشیجات</p></li><li style="cursor:pointer;" id="a167"><p id="z167">سوغاتی</p></li><li style="cursor:pointer;" id="a168"><p id="z168">مواد غذایی ارگانیک</p></li><li style="cursor:pointer;" id="a169"><p id="z169">عمده فروشی</p></li><li style="cursor:pointer;" id="a170"><p id="z170">خشکه پزی و نان فانتزی</p></li><li style="cursor:pointer;" id="a171"><p id="z171">پروتئینی</p></li><li style="cursor:pointer;" id="a172"><p id="z172">آجیل و خشکبار</p></li><li style="cursor:pointer;" id="a173"><p id="z173">خوارو بار</p></li><li style="cursor:pointer;" id="a174"><p id="z174">آبمیوه و بستنی</p></li></ul><ul style='float:right;margin-right:25px;'></ul></div></div><div class="div-content" id="div-content-22" style="padding:5px; height:448px; width:100%; background:#ff8abb;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/22.png">
+			<h2 class="header">نرم افزار و سخت افزار</h2><ul style="float:right;"><li style="cursor:pointer;" id="a175"><p id="z175">خدمات اینترنت پر سرعت</p></li><li style="cursor:pointer;" id="a176"><p id="z176">خدمات وب و شبکه</p></li><li style="cursor:pointer;" id="a177"><p id="z177">فروش ، نصب و تعمیر سخت افزار</p></li><li style="cursor:pointer;" id="a178"><p id="z178">ماشین آلات اداری و الکترونیکی</p></li><li style="cursor:pointer;" id="a179"><p id="z179">فروش نرم افزار</p></li><li style="cursor:pointer;" id="a180"><p id="z180">بازیهای رایانه ای</p></li></ul></div></div><div class="div-content" id="div-content-23" style="padding:5px; height:448px; width:100%; background:#98ff98;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/23.png">
+			<h2 class="header">ویژه زوجین</h2><ul style="float:right;"><li style="cursor:pointer;" id="a181"><p id="z181">لوازم خانگی</p></li><li style="cursor:pointer;" id="a182"><p id="z182">زناشویی</p></li><li style="cursor:pointer;" id="a183"><p id="z183">زیورالات</p></li><li style="cursor:pointer;" id="a184"><p id="z184">لوازم بهداشتی</p></li><li style="cursor:pointer;" id="a185"><p id="z185">مبلمان و سرویس خواب</p></li><li style="cursor:pointer;" id="a186"><p id="z186">آموزش</p></li><li style="cursor:pointer;" id="a187"><p id="z187">باغ و تالار پذیرایی</p></li><li style="cursor:pointer;" id="a188"><p id="z188">خدمات و همایش و سمینار</p></li><li style="cursor:pointer;" id="a189"><p id="z189">محضر ازدواج و طلاق</p></li><li style="cursor:pointer;" id="a190"><p id="z190">کرایه ملزومات مجالس و مراسم</p></li><li style="cursor:pointer;" id="a191"><p id="z191">خدمات جشن عقد، ازدواج ، تولّد</p></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a192"><p id="z192">گل فروشی و تزئین اتومبیل</p></li><li style="cursor:pointer;" id="a193"><p id="z193">آتیله عکاسی و فیلمبرداری</p></li><li style="cursor:pointer;" id="a194"><p id="z194">کرایه اتومبیل</p></li><li style="cursor:pointer;" id="a195"><p id="z195">اجرای موزیک</p></li><li style="cursor:pointer;" id="a196"><p id="z196">کارت دعوت</p></li><li style="cursor:pointer;" id="a197"><p id="z197">مولودی خوانی و مرثیه سرایی</p></li><li style="cursor:pointer;" id="a198"><p id="z198">البسه مجلسی</p></li><li style="cursor:pointer;" id="a199"><p id="z199">کلینیک های زیبایی بانوان</p></li><li style="cursor:pointer;" id="a200"><p id="z200">سالن ها و خدمات پیرایشی آقایان</p></li><li style="cursor:pointer;" id="a201"><p id="z201">بوتیک و محصولات آرایشی و بهداشتی</p></li><li style="cursor:pointer;" id="a202"><p id="z202">آموزشگاه آرایشی بانوان</p></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a203"><p id="z203">آموزشگاه پیرایشی آقایان</p></li></ul></div></div><div class="div-content" id="div-content-24" style="padding:5px; height:448px; width:100%; background:#bca0ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/24.png">
+			<h2 class="header">ویژه آقایان</h2><ul style="float:right;"><li style="cursor:pointer;" id="a204"><p id="z204">لباس و البسه</p></li><li style="cursor:pointer;" id="a205"><p id="z205">زیورالات</p></li><li style="cursor:pointer;" id="a206"><p id="z206">آموزشگاه ها</p></li><li style="cursor:pointer;" id="a207"><p id="z207">سالن زیبایی</p></li><li style="cursor:pointer;" id="a208"><p id="z208">زناشویی</p></li><li style="cursor:pointer;" id="a209"><p id="z209">بهداشتی</p></li></ul></div></div><div class="div-content" id="div-content-25" style="padding:5px; height:448px; width:100%; background:#d9a9ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/25.png">
+			<h2 class="header">ویژه بانوان</h2><ul style="float:right;"><li style="cursor:pointer;" id="a210"><p id="z210">لباس و البسه</p></li><li style="cursor:pointer;" id="a211"><p id="z211">زیورالات</p></li><li style="cursor:pointer;" id="a212"><p id="z212">آموزشگاه ها</p></li><li style="cursor:pointer;" id="a213"><p id="z213">سالن زیبایی</p></li><li style="cursor:pointer;" id="a214"><p id="z214">زناشویی</p></li><li style="cursor:pointer;" id="a215"><p id="z215">بهداشتی</p></li></ul></div></div><div class="div-content" id="div-content-26" style="padding:5px; height:448px; width:100%; background:#e487ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/26.png">
+			<h2 class="header">ویژه کودک و نوجوان</h2><ul style="float:right;"><li style="cursor:pointer;" id="a216"><p id="z216">مدارس</p></li><li style="cursor:pointer;" id="a217"><p id="z217">پوشاک</p></li><li style="cursor:pointer;" id="a218"><p id="z218">آموزشگاه</p></li><li style="cursor:pointer;" id="a219"><p id="z219">تدریس خصوصی</p></li><li style="cursor:pointer;" id="a220"><p id="z220">مشاوره</p></li></ul></div></div><div class="div-content" id="div-content-27" style="padding:5px; height:448px; width:100%; background:#ff79e3;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/27.png">
+			<h2 class="header">ویژه نوزادان</h2><ul style="float:right;"><li style="cursor:pointer;" id="a221"><p id="z221">سیسمونی</p></li><li style="cursor:pointer;" id="a222"><p id="z222">پزشکی</p></li></ul></div></div><div class="div-content" id="div-content-28" style="padding:5px; height:448px; width:100%; background:#ff8abb;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/28.png">
+			<h2 class="header">بهداشتی درمانی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a223"><p id="z223">آزمایشگاه تشخیص طبی</p></li><li style="cursor:pointer;" id="a224"><p id="z224">کلینیک درمانی خصوصی</p></li><li style="cursor:pointer;" id="a225"><p id="z225">کلینیک زیبایی</p></li><li style="cursor:pointer;" id="a226"><p id="z226">کلینیک توانبخشی</p></li><li style="cursor:pointer;" id="a227"><p id="z227">لوازم پزشکی ، آزمایشگاهی و درمانی</p></li><li style="cursor:pointer;" id="a228"><p id="z228">داروخانه</p></li><li style="cursor:pointer;" id="a229"><p id="z229">مراکز ترک اعتیاد</p></li><li style="cursor:pointer;" id="a230"><p id="z230">دارو گیاهی و عطاریها</p></li></ul></div></div><div class="div-content" id="div-content-29" style="padding:5px; height:448px; width:100%; background:#ff7e7e;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/29.png">
+			<h2 class="header">پزشکی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a231"><p id="z231">پزشک عمومی و جراح</p></li><li style="cursor:pointer;" id="a232"><p id="z232">داخلی و اطفال</p></li><li style="cursor:pointer;" id="a233"><p id="z233">زنان ، زایمان ، نازایی</p></li><li style="cursor:pointer;" id="a234"><p id="z234">چشم پزشکی و بینایی سنجی</p></li><li style="cursor:pointer;" id="a235"><p id="z235">دهان و دندان</p></li><li style="cursor:pointer;" id="a236"><p id="z236">ریه و دستگاه تنفسی</p></li><li style="cursor:pointer;" id="a237"><p id="z237">شنوایی سنجی</p></li><li style="cursor:pointer;" id="a238"><p id="z238">طب سنتی و سوزنی</p></li><li style="cursor:pointer;" id="a239"><p id="z239">پوست و مو و زیبایی</p></li><li style="cursor:pointer;" id="a240"><p id="z240">تغذیه و رژیم درمانی</p></li><li style="cursor:pointer;" id="a241"><p id="z241">غدد و عفونی</p></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a242"><p id="z242">قلب و عروق</p></li><li style="cursor:pointer;" id="a243"><p id="z243">گفتار درمانی</p></li><li style="cursor:pointer;" id="a244"><p id="z244">کبد و گوارش</p></li><li style="cursor:pointer;" id="a245"><p id="z245">گوش حلق و بینی</p></li><li style="cursor:pointer;" id="a246"><p id="z246">مغز و اعصاب و روان</p></li><li style="cursor:pointer;" id="a247"><p id="z247">مشاوره روانشناسی و روانپزشکی</p></li><li style="cursor:pointer;" id="a248"><p id="z248">آلرژی</p></li><li style="cursor:pointer;" id="a249"><p id="z249">مامایی</p></li><li style="cursor:pointer;" id="a250"><p id="z250">کلیوی ، تناسلی و اداری</p></li><li style="cursor:pointer;" id="a251"><p id="z251">عفونی</p></li><li style="cursor:pointer;" id="a252"><p id="z252">مفاصل و استخوان</p></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a253"><p id="z253">ارتوپدی</p></li><li style="cursor:pointer;" id="a254"><p id="z254">رادیولوژی</p></li><li style="cursor:pointer;" id="a255"><p id="z255">سونوگرافی</p></li><li style="cursor:pointer;" id="a256"><p id="z256">اورولوژی</p></li><li style="cursor:pointer;" id="a257"><p id="z257">ایموتولوژی</p></li><li style="cursor:pointer;" id="a258"><p id="z258">رادیوتراپی</p></li><li style="cursor:pointer;" id="a259"><p id="z259">فیزیوتراپی</p></li><li style="cursor:pointer;" id="a260"><p id="z260">نفرولوژی</p></li><li style="cursor:pointer;" id="a261"><p id="z261">هماتولوژی</p></li><li style="cursor:pointer;" id="a262"><p id="z262">روماتولوژی</p></li><li style="cursor:pointer;" id="a263"><p id="z263">اندوسکوپی</p></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a264"><p id="z264">ماموگرافی</p></li><li style="cursor:pointer;" id="a265"><p id="z265">پاتولوژی</p></li></ul></div></div><div class="div-content" id="div-content-30" style="padding:5px; height:448px; width:100%; background:#ffbe6a;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/31.png">
+			<h2 class="header">دکوراسیون</h2><ul style="float:right;"><li style="cursor:pointer;" id="a266"><p id="z266">دکور و تزئینات داخلی</p></li><li style="cursor:pointer;" id="a267"><p id="z267">نورپردازی ، روشنایی و لوستر</p></li><li style="cursor:pointer;" id="a268"><p id="z268">طراحی و لوازم دکوراسیون</p></li><li style="cursor:pointer;" id="a269"><p id="z269">کفپوش ، پارکت و کاغذ دیواری</p></li></ul></div></div><div class="div-content" id="div-content-31" style="padding:5px; height:448px; width:100%; background:#feff80;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/32.png">
+			<h2 class="header">آرایشی پیرایشی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a270"><p id="z270">کلینیک های زیبایی بانوان</p></li><li style="cursor:pointer;" id="a271"><p id="z271">سالن ها و خدمات پیرایشی آقایان</p></li><li style="cursor:pointer;" id="a272"><p id="z272">بوتیک و محصولات آرایشی و بهداشتی</p></li><li style="cursor:pointer;" id="a273"><p id="z273">آموزشگاه آرایشی بانوان</p></li><li style="cursor:pointer;" id="a274"><p id="z274">آموزشگاه پیرایشی آقایان</p></li></ul></div></div><div class="div-content" id="div-content-32" style="padding:5px; height:448px; width:100%; background:#ffe789;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/33.png">
+			<h2 class="header">کارخانجات</h2><ul style="float:right;"><li style="cursor:pointer;" id="a275"><p id="z275">آرایشی و بهداشتی</p></li><li style="cursor:pointer;" id="a276"><p id="z276">ابزار و یراق آلات</p></li><li style="cursor:pointer;" id="a277"><p id="z277">البسه</p></li><li style="cursor:pointer;" id="a278"><p id="z278">دارو</p></li><li style="cursor:pointer;" id="a279"><p id="z279">طلا و جواهر</p></li><li style="cursor:pointer;" id="a280"><p id="z280">ماشین صنعتی</p></li><li style="cursor:pointer;" id="a281"><p id="z281">ساختمان و صنایع وابسته</p></li><li style="cursor:pointer;" id="a282"><p id="z282">لوازم اداری</p></li><li style="cursor:pointer;" id="a283"><p id="z283">کالای دیجیتال</p></li><li style="cursor:pointer;" id="a284"><p id="z284">لوازم خانگی</p></li><li style="cursor:pointer;" id="a285"><p id="z285">وسایل نقلیه</p></li></ul><ul style='float:right;margin-right:25px;'></ul></div></div><div class="div-content" id="div-content-33" style="padding:5px; height:448px; width:100%; background:#ffbe6a;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/34.png">
+			<h2 class="header">لوازم ورزشی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a286"><p id="z286">تجهیزات ورزشی خاص</p></li><li style="cursor:pointer;" id="a287"><p id="z287">تجهیزات ورزشی عام</p></li></ul></div></div><div class="div-content" id="div-content-34" style="padding:5px; height:448px; width:100%; background:#98FF98;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/35.png">
+			<h2 class="header">فروشگاه اینترنتی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a288"><p id="z288">کامپیوتر: سخت افزار</p></li><li style="cursor:pointer;" id="a289"><p id="z289">کامپیوتر: نرم افزار</p></li><li style="cursor:pointer;" id="a290"><p id="z290">آموزشی مشاوره</p></li><li style="cursor:pointer;" id="a291"><p id="z291">ابزار تبلیغاتی</p></li><li style="cursor:pointer;" id="a292"><p id="z292">گوشی تلفن همراه</p></li><li style="cursor:pointer;" id="a293"><p id="z293">خودرویی</p></li><li style="cursor:pointer;" id="a294"><p id="z294">آرایشی بهداشتی</p></li><li style="cursor:pointer;" id="a295"><p id="z295">زیور آلات و کادویی</p></li><li style="cursor:pointer;" id="a296"><p id="z296">پوشاک مردانه</p></li><li style="cursor:pointer;" id="a297"><p id="z297">پوشاک زنانه</p></li><li style="cursor:pointer;" id="a298"><p id="z298">کیف و کفش</p></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a299"><p id="z299">عطر و ادکلن</p></li><li style="cursor:pointer;" id="a300"><p id="z300">امنیت و دوربین مدار بسته</p></li><li style="cursor:pointer;" id="a301"><p id="z301">خدمات وب و اینترنت پرسرعت</p></li></ul></div></div><div class="div-content" id="div-content-35" style="padding:5px; height:448px; width:100%; background:;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/">
+			<h2 class="header"></h2><ul style="float:right;"></ul></div></div><style>
+							#pn {
+								display: none;
+							}
+						</style><span id="pn" style="display:show;">
+
+<h4>کل صفحات (0)</h4><a href='?content=&page=2'>بعدی &raquo;</a>
+</span>
+
+
+						</td>
+					</tr>
+				</table>
+				<!-- <div style="background:white url('images/parish-shop.png'); background-size:100% 100%; width:100px;height:100px;border:1px solid #98ff98;border-radius:128px;box-shadow:0px 0px 40px 0px #98ff98 inset;text-align:center;margin:10px;cursor:pointer;position:relative;z-index:5;" id="35"></div> -->
+			</td>
+		</tr>
+	</table>
+
+
+
+</body>
+
+
+					
+<script>
+function showUser4(str) {
+  if (str=="") {
+	document.getElementById("txtHint").innerHTML="";
+	return;
+  }
+  if (window.XMLHttpRequest) {
+	// code for IE7+, Firefox, Chrome, Opera, Safari
+	xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+	if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	  document.getElementById("txtHint4").innerHTML=xmlhttp.responseText;
+	}
+  }
+  xmlhttp.open("GET","getuser.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
+
+
+<script>
+function showUser3(str) {
+  if (str=="") {
+	document.getElementById("txtHint").innerHTML="";
+	return;
+  }
+  if (window.XMLHttpRequest) {
+	// code for IE7+, Firefox, Chrome, Opera, Safari
+	xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+	if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	  document.getElementById("txtHint3").innerHTML=xmlhttp.responseText;
+	}
+  }
+  xmlhttp.open("GET","getuser.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
+
+
+<script>
+function showUser2(str) {
+  if (str=="") {
+	document.getElementById("txtHint").innerHTML="";
+	return;
+  }
+  if (window.XMLHttpRequest) {
+	// code for IE7+, Firefox, Chrome, Opera, Safari
+	xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+	if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	  document.getElementById("txtHint2").innerHTML=xmlhttp.responseText;
+	}
+  }
+  xmlhttp.open("GET","getuser.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
+
+
+
+<script>
+function showUser1(str) {
+  if (str=="") {
+	document.getElementById("txtHint").innerHTML="";
+	return;
+  }
+  if (window.XMLHttpRequest) {
+	// code for IE7+, Firefox, Chrome, Opera, Safari
+	xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+	if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	  document.getElementById("txtHint1").innerHTML=xmlhttp.responseText;
+	}
+  }
+  xmlhttp.open("GET","/getuser.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>

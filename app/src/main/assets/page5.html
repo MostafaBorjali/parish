@@ -1,0 +1,1405 @@
+<head>
+	<meta  charset="utf-8">
+	<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=0;"/>
+
+	<title>وبسایت آزمایشی</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	
+	<script src="jquery.min.js"></script>
+	<script src="script.js"></script>
+	<script src="kharid.js"></script>
+	<style>
+		.div-gerd{
+			border: 1px solid white;
+			width: 100%;
+			height: auto;
+			border-radius: 50px;
+			text-align: center;
+			float: right;
+			margin: 1px;
+		}
+		.inserted{
+			display: none;
+			float: right;
+		}
+		.insert{
+			cursor: pointer;
+		}
+		.insert:hover div{
+			display: block;
+		}
+		#talaar{
+			display: none;
+		}
+		#top-gerd td{
+			padding:1px;
+		}
+		a{
+			text-decoration: none;
+		}
+		a:link {
+			color: black;
+		}
+		a:visited {
+			color: black;
+		}
+		a:hover {
+			color: black;
+		}
+		a:active {
+			color: black;
+		}
+
+.text-slider {
+	position: relative;
+	overflow: hidden;
+}
+
+.text-slider ul {
+	position: relative;
+	list-style: none;
+	width: 400px;
+}
+
+.text-slider ul li {
+	width: 400px;
+	position: relative;
+	display: block;
+	/*float: left;*/
+	text-align: center;
+	color: black;
+}
+</style>
+
+<script>
+jQuery(document).ready(function ($) {
+
+	setInterval(function () {
+		moveRight();
+	}, 5000);
+
+  
+	var slideCount = $('#text-slider1 ul li').length;
+	var slideWidth = $('#text-slider1 ul li').width();
+	var slideHeight = $('#text-slider1 ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#text-slider1').css({ width: slideWidth, height: slideHeight });
+	
+	$('#text-slider1 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+	$('#text-slider1 ul li:last-child').prependTo('#text-slider1 ul');
+
+	function moveLeft() {
+		$('#text-slider1 ul').animate({
+			left: + slideWidth
+		}, 200, function () {
+			$('#text-slider1 ul li:last-child').prependTo('#text-slider1 ul');
+			$('#text-slider1 ul').css('left', '');
+		});
+	};
+
+	function moveRight() {
+		$('#text-slider1 ul').animate({
+			left: - slideWidth
+		}, 200, function () {
+			$('#text-slider1 ul li:first-child').appendTo('#text-slider1 ul');
+			$('#text-slider1 ul').css('left', '');
+		});
+	};
+}); 
+
+
+
+jQuery(document).ready(function ($) {
+	setInterval(function () {
+		moveRight();
+	}, 5000);
+
+  
+	var slideCount = $('#text-slider2 ul li').length;
+	var slideWidth = $('#text-slider2 ul li').width();
+	var slideHeight = $('#text-slider2 ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#text-slider2').css({ width: slideWidth, height: slideHeight });
+	
+	$('#text-slider2 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+	$('#text-slider2 ul li:last-child').prependTo('#text-slider2 ul');
+
+	function moveLeft() {
+		$('#text-slider2 ul').animate({
+			left: + slideWidth
+		}, 200, function () {
+			$('#text-slider2 ul li:last-child').prependTo('#text-slider2 ul');
+			$('#text-slider2 ul').css('left', '');
+		});
+	};
+
+	function moveRight() {
+		$('#text-slider2 ul').animate({
+			left: - slideWidth
+		}, 200, function () {
+			$('#text-slider2 ul li:first-child').appendTo('#text-slider2 ul');
+			$('#text-slider2 ul').css('left', '');
+		});
+	};
+}); 
+
+
+
+jQuery(document).ready(function ($) {
+	setInterval(function () {
+		moveRight();
+	}, 5000);
+
+  
+	var slideCount = $('#text-slider3 ul li').length;
+	var slideWidth = $('#text-slider3 ul li').width();
+	var slideHeight = $('#text-slider3 ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#text-slider3').css({ width: slideWidth, height: slideHeight });
+	
+	$('#text-slider3 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+	$('#text-slider3 ul li:last-child').prependTo('#text-slider3 ul');
+
+	function moveLeft() {
+		$('#text-slider3 ul').animate({
+			left: + slideWidth
+		}, 200, function () {
+			$('#text-slider3 ul li:last-child').prependTo('#text-slider3 ul');
+			$('#text-slider3 ul').css('left', '');
+		});
+	};
+
+	function moveRight() {
+		$('#text-slider3 ul').animate({
+			left: - slideWidth
+		}, 200, function () {
+			$('#text-slider3 ul li:first-child').appendTo('#text-slider3 ul');
+			$('#text-slider3 ul').css('left', '');
+		});
+	};
+}); 
+
+
+
+jQuery(document).ready(function ($) {
+	setInterval(function () {
+		moveRight();
+	}, 5000);
+
+  
+	var slideCount = $('#text-slider4 ul li').length;
+	var slideWidth = $('#text-slider4 ul li').width();
+	var slideHeight = $('#text-slider4 ul li').height();
+	var sliderUlWidth = slideCount * slideWidth;
+	
+	$('#text-slider4').css({ width: slideWidth, height: slideHeight });
+	
+	$('#text-slider4 ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
+	
+	$('#text-slider4 ul li:last-child').prependTo('#text-slider4 ul');
+
+	function moveLeft() {
+		$('#text-slider4 ul').animate({
+			left: + slideWidth
+		}, 200, function () {
+			$('#text-slider4 ul li:last-child').prependTo('#text-slider4 ul');
+			$('#text-slider4 ul').css('left', '');
+		});
+	};
+
+	function moveRight() {
+		$('#text-slider4 ul').animate({
+			left: - slideWidth
+		}, 200, function () {
+			$('#text-slider4 ul li:first-child').appendTo('#text-slider4 ul');
+			$('#text-slider4 ul').css('left', '');
+		});
+	};
+});
+
+
+$document.ready(function(){
+	$('.bxslider').bxSlider({
+		auto: true,
+		autoControls: true
+	});
+});
+</script>
+<script src="jquery.bxslider.min.js"></script>
+<link rel="stylesheet" type="text/css" href="jquery.bxslider.css">
+</head>
+
+
+
+<body>
+
+
+
+
+<p style="margin-top:10px;font-size:13px; text-align:center;"><b>کاربر گرامی؛ به</b> <span style="color:#8a5800;">بخش خرید با تخفیف ویژه</span> خوش آمدید. <a href="../user/index.php" style="color:darkblue;text-decoration:none;">پنل کاربری شما</a>  <b style="padding-right:20px">سخن بزرگان:</b> <span style="color:#8a5800;">زمانی که خاطراتت از امیدت قویتر شد، پیر شدنت شروع شده است!</span></p>
+
+
+
+	<div id="bg" style="width:100%;height:100%;top:0px;left:0px;background:lightgray;opacity:0.9;position:fixed;z-index:10000;display:none;"></div>
+	<img src="images/lens.png" id="lens" width="1000" height="588" border="0" usemap="#map" style="opacity:0.9;position:absolute;left:0px;top:10px;z-index:100000000;display:none;">
+	<div id="look" style="width:256px;text-align:center;color:white;position:absolute;left:570px;top:180px;z-index:10000000000000;display:none;">
+		<h2 style="margin-top:-15;margin-bottom:20px;">جستجوی پیشرفته</h2>
+		<p style="margin-top:3px;">صنف مورد نظر را از کادر اول انتخاب کنید، یا در کادر دوم کلمه ی کلیدی مورد نظر خود را جستجوی کنید.</p>
+		<table style="color:white;">
+			<tr>
+				<td>صنف مورد نظر:</td>
+				<td><input style="width:128px;border-radius:5px 2px;box-shadow:0px 0px 10px 0px gray inset;margin-top:2px;"></td>
+			</tr>
+			<tr>
+				<td>کالا یا خدمات:</td>
+				<td><input style="width:128px;border-radius:5px 2px;box-shadow:0px 0px 10px 0px gray inset;margin-top:2px;"></td>
+			</tr>
+			<tr>
+				<td>مدیر صنف:</td>
+				<td><input style="width:128px;border-radius:5px 2px;box-shadow:0px 0px 10px 0px gray inset;margin-top:2px;"></td>
+			</tr>
+			<tr>
+				<td>نام مرکز صنفی:</td>
+				<td><input style="width:128px;border-radius:5px 2px;box-shadow:0px 0px 10px 0px gray inset;margin-top:2px;"></td>
+			</tr>
+			<tr>
+				<td>وبسایت صنف:</td>
+				<td><input style="width:128px;border-radius:5px 2px;box-shadow:0px 0px 10px 0px gray inset;margin-top:2px;"></td>
+			</tr>
+		</table>
+		<button style="margin-top:2px;border-radius:5px 2px;">جستجو</button>
+	<img src="images/x.png" id="x" style="position:fixed; top:160px;left:800px;width:32px;z-index:10000000000;cursor:pointer;">
+	</div>
+
+<map name="map">
+<area shape="poly" coords="475,267,478,256,501,258,508,221,546,158,586,121,638,95,700,86,757,92,804,111,848,144,878,181,897,221,909,265,910,316,901,352,890,383,867,421,827,461,780,485,729,498,659,495,597,473,561,443,533,410,517,382,502,339,499,321,479,322,472,313,0,311,0,588,1000,588,1000,0,0,0,0,267" target="other" id="other">
+</map>
+
+
+
+
+
+	<table style="margin:20px;">
+		<tr>
+			<td id="total" style="color:black; width:100%; vertical-align:top; padding:5px;z-index:100;position:relative;">
+<table style="margin-right:-2;">
+	<tr>
+						<td style="color:black; vertical-align:top;">
+							<div class="div-content" id="div-content-0" style="padding:5px; height:448px; width:100%; background:white; box-shadow:0px 0px 100px 20px #7b7b7b inset;border:3px solid lightgray;border-radius:10px;overflow:auto;">
+								<div style="margin:0px;">
+                                    <table id="div1" style="height:100%;border:1px solid black;width:100%;">
+                                        <tr>
+                                            <td style="height:104px;border:1px solid black;vertical-align:top;">
+                                                <p class="p-text">مجموعه‌ی تشریفاتی رسپینا شما را به بازدید از <a href="http://talar-respina.ir/" target="_blank">www.talar-respina.ir</a> دعوت مینماید.</p>
+                                                <div id="image1" style="margin:2px 5px;width:75px;height:75px;float:right; background:url('images/img.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="tour1" style="margin:2px 5px;width:75px;height:75px;float:right; border-radius:105px;background:url('images/vr1.png');background-size:75px 75px;">
+                                                </div>
+                                                <div id="senf1" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/license.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="contact1" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/contact.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="list1" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/list.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="ads1" style="width:400px;height:75px;float:right;background:url('images/tumar.png'); background-size:400px 75px;">
+                                                    <p style="color:black;margin-top:25px;">
+                                                        <div id="text-slider1" class="text-slider">
+                                                            <ul>
+                                                                <li>به پاس قدر دانی از شما، 70٪ تخفیف ویژه</li>
+                                                                <li>آماده ی پذیرایی از مجالس و جشنهای شما</li>
+                                                                <li>فضای بسیار زیبا و رویایی برای عروس و داماد</li>
+                                                                <li>با ظرفیت 300 نفر آماده ارائه خدمات</li>
+                                                                <li>سفره عقد مجلل در طبقه‌ی اول</li>
+                                                            </ul>
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                </div>
+                                                <div id="image10" style="width:100%;height:355px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    <iframe src="test.html" style="width:100%;height:337px;border:0px solid transparent;"></iframe>
+                                                </div>
+                                                <div id="tour10" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+													<img src="tour.gif" width="100%" height="270px">
+
+                                                </div>
+                                                <div id="senf10" style="width:100%;height:300px; display:none;float:left;text-align:center;overflow-y:hidden;"><img src="images/x.png" class="x" style="float:right;margin-bottom:-30px;z-index:200;"><br>
+    <a href="images/1.jpg" data-imagelightbox="c"><img class="govahi" src="images/1.jpg"></a>
+    <a href="images/2.jpg" data-imagelightbox="c"><img class="govahi" src="images/2.jpg"></a>
+    <a href="images/3.jpg" data-imagelightbox="c"><img class="govahi" src="images/3.jpg"></a>
+
+
+
+
+
+
+
+
+
+
+
+                                                </div>
+                                                <div id="contact10" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    <table class="contact">
+                                                        <tr>
+                                                            <td>تلفن تماس:</td>
+                                                            <td>021-12345678</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>تلفن همراه:</td>
+                                                            <td>09123456789</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>پیامک:</td>
+                                                            <td>50001234</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>فکس:</td>
+                                                            <td>021-12345678</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ایمیل:</td>
+                                                            <td>info@tehrank.ir</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>وبسایت:</td>
+                                                            <td><a href="http://tehrank.ir">tehrank.ir</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>نشانی:</td>
+                                                            <td>تهران - خیابان فلسطین - خیابان ۱۷ - کوچه ۳ - پلاک ۵ - طبقه‌ی سوم</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div id="list10" style="width:100%;height:300px;display:none;float:left;overflow-x:hidden;margin-bottom:15px;"><img src="images/x.png" class="x">
+                                                <table style="width:100%;text-align:center;" border="1px">
+                                                    <thead style="font-weight:bold;background:lightgray;">
+                                                        <td>ردیف</td>
+                                                        <td>نوع محصول/خدمت</td>
+                                                        <td>نام محصول</td>
+                                                        <td>برند</td>
+                                                        <td>قیمت اصلی(ریال)</td>
+                                                        <td>درصد تخفیف</td>
+                                                        <td>قیمت نهایی(ریال)</td>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>۱</td>
+                                                        <td>محصول شماره۱</td>
+                                                        <td>کد ۴۲</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۲</td>
+                                                        <td>محصول شماره۲</td>
+                                                        <td>کد ۴۳</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۳</td>
+                                                        <td>محصول شماره۳</td>
+                                                        <td>کد ۴۴</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۴</td>
+                                                        <td>محصول شماره۴</td>
+                                                        <td>کد ۴۵</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۵</td>
+                                                        <td>محصول شماره۵</td>
+                                                        <td>کد ۴۶</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۶</td>
+                                                        <td>محصول شماره۶</td>
+                                                        <td>کد ۴۷</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۷</td>
+                                                        <td>محصول شماره۷</td>
+                                                        <td>کد ۴۸</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۸</td>
+                                                        <td>محصول شماره۸</td>
+                                                        <td>کد ۴۹</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۹</td>
+                                                        <td>محصول شماره۹</td>
+                                                        <td>کد ۵۰</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۰</td>
+                                                        <td>محصول شماره۱۰</td>
+                                                        <td>کد ۵۱</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۱</td>
+                                                        <td>محصول شماره۱۱</td>
+                                                        <td>کد ۵۲</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۲</td>
+                                                        <td>محصول شماره۱۲</td>
+                                                        <td>کد ۵۳</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۳</td>
+                                                        <td>محصول شماره۱۳</td>
+                                                        <td>کد ۵۴</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۴</td>
+                                                        <td>محصول شماره۱۴</td>
+                                                        <td>کد ۵۵</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۵</td>
+                                                        <td>محصول شماره۱۵</td>
+                                                        <td>کد ۵۶</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                </table>
+                                                </div>
+                                            <td>
+                                        </tr>
+                                        <tr id="div2">
+                                            <td style="height:104px;border:1px solid black;vertical-align:top;">
+                                                <p class="p-text">مجموعه‌ی تشریفاتی مهتاب شما را به بازدید از <a href="http://talar-mahtab.ir/" target="_blank">www.talar-mahtab.ir</a> دعوت مینماید.</p>
+                                                <div id="image2" style="margin:2px 5px;width:75px;height:75px;float:right; background:url('images/img.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="tour2" style="margin:2px 5px;width:75px;height:75px;float:right; border-radius:105px;background:url('images/vr1.png');background-size:75px 75px;">
+                                                </div>
+                                                <div id="senf2" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/license.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="contact2" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/contact.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="list2" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/list.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="ads2" style="width:400px;height:75px;float:right;background:url('images/tumar.png'); background-size:400px 75px;">
+                                                    <p style="color:black;margin-top:25px;">
+                                                        <div id="text-slider2" class="text-slider">
+                                                            <ul>
+                                                                <li>سفره عقد مجلل در طبقه‌ی اول</li>
+                                                                <li>به پاس قدر دانی از شما، 70٪ تخفیف ویژه</li>
+                                                                <li>آماده ی پذیرایی از مجالس و جشنهای شما</li>
+                                                                <li>فضای بسیار زیبا و رویایی برای عروس و داماد</li>
+                                                                <li>با ظرفیت 300 نفر آماده ارائه خدمات</li>
+                                                            </ul>  
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div id="image20" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    
+                                                </div>
+                                                <div id="tour20" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    
+                                                </div>
+                                                <div id="senf20" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    
+                                                </div>
+                                                <div id="contact20" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    <table class="contact">
+                                                        <tr>
+                                                            <td>تلفن تماس:</td>
+                                                            <td>021-12345678</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>تلفن همراه:</td>
+                                                            <td>09123456789</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>پیامک:</td>
+                                                            <td>50001234</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>فکس:</td>
+                                                            <td>021-12345678</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ایمیل:</td>
+                                                            <td>info@tehrank.ir</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>وبسایت:</td>
+                                                            <td><a href="http://tehrank.ir">tehrank.ir</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>نشانی:</td>
+                                                            <td>تهران - خیابان فلسطین - خیابان ۱۷ - کوچه ۳ - پلاک ۵ - طبقه‌ی سوم</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div id="list20" style="width:100%;height:300px;display:none;float:left;overflow-x:hidden;margin-bottom:15px;"><img src="images/x.png" class="x">
+                                                <table style="width:100%;text-align:center;" border="1px">
+                                                    <thead style="font-weight:bold;background:lightgray;">
+                                                        <td>ردیف</td>
+                                                        <td>نوع محصول/خدمت</td>
+                                                        <td>نام محصول</td>
+                                                        <td>برند</td>
+                                                        <td>قیمت اصلی(ریال)</td>
+                                                        <td>درصد تخفیف</td>
+                                                        <td>قیمت نهایی(ریال)</td>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>۱</td>
+                                                        <td>محصول شماره۱</td>
+                                                        <td>کد ۴۲</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۲</td>
+                                                        <td>محصول شماره۲</td>
+                                                        <td>کد ۴۳</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۳</td>
+                                                        <td>محصول شماره۳</td>
+                                                        <td>کد ۴۴</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۴</td>
+                                                        <td>محصول شماره۴</td>
+                                                        <td>کد ۴۵</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۵</td>
+                                                        <td>محصول شماره۵</td>
+                                                        <td>کد ۴۶</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۶</td>
+                                                        <td>محصول شماره۶</td>
+                                                        <td>کد ۴۷</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۷</td>
+                                                        <td>محصول شماره۷</td>
+                                                        <td>کد ۴۸</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۸</td>
+                                                        <td>محصول شماره۸</td>
+                                                        <td>کد ۴۹</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۹</td>
+                                                        <td>محصول شماره۹</td>
+                                                        <td>کد ۵۰</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۰</td>
+                                                        <td>محصول شماره۱۰</td>
+                                                        <td>کد ۵۱</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۱</td>
+                                                        <td>محصول شماره۱۱</td>
+                                                        <td>کد ۵۲</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۲</td>
+                                                        <td>محصول شماره۱۲</td>
+                                                        <td>کد ۵۳</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۳</td>
+                                                        <td>محصول شماره۱۳</td>
+                                                        <td>کد ۵۴</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۴</td>
+                                                        <td>محصول شماره۱۴</td>
+                                                        <td>کد ۵۵</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۵</td>
+                                                        <td>محصول شماره۱۵</td>
+                                                        <td>کد ۵۶</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                </table>
+                                                </div>
+                                            <td>
+                                        </tr>
+                                        <tr id="div3">
+                                            <td style="height:104px;border:1px solid black;vertical-align:top;">
+                                                <p class="p-text">مجموعه‌ی تشریفاتی شرق شما را به بازدید از <a href="http://talar-shargh.ir/" target="_blank">www.talar-shargh.ir</a> دعوت مینماید.</p>
+                                                <div id="image3" style="margin:2px 5px;width:75px;height:75px;float:right; background:url('images/img.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="tour3" style="margin:2px 5px;width:75px;height:75px;float:right; border-radius:105px;background:url('images/vr1.png');background-size:75px 75px;">
+                                                </div>
+                                                <div id="senf3" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/license.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="contact3" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/contact.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="list3" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/list.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="ads3" style="width:400px;height:75px;float:right;background:url('images/tumar.png'); background-size:400px 75px;">
+                                                    <p style="color:black;margin-top:25px;">
+                                                        <div id="text-slider3" class="text-slider">
+                                                            <ul>
+                                                                <li>با ظرفیت 300 نفر آماده ارائه خدمات</li>
+                                                                <li>سفره عقد مجلل در طبقه‌ی اول</li>
+                                                                <li>به پاس قدر دانی از شما، 70٪ تخفیف ویژه</li>
+                                                                <li>آماده ی پذیرایی از مجالس و جشنهای شما</li>
+                                                                <li>فضای بسیار زیبا و رویایی برای عروس و داماد</li>
+                                                            </ul>  
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div id="image30" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    
+                                                </div>
+                                                <div id="tour30" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    
+                                                </div>
+                                                <div id="senf30" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    
+                                                </div>
+                                                <div id="contact30" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    <table class="contact">
+                                                        <tr>
+                                                            <td>تلفن تماس:</td>
+                                                            <td>021-12345678</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>تلفن همراه:</td>
+                                                            <td>09123456789</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>پیامک:</td>
+                                                            <td>50001234</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>فکس:</td>
+                                                            <td>021-12345678</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ایمیل:</td>
+                                                            <td>info@tehrank.ir</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>وبسایت:</td>
+                                                            <td><a href="http://tehrank.ir">tehrank.ir</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>نشانی:</td>
+                                                            <td>تهران - خیابان فلسطین - خیابان ۱۷ - کوچه ۳ - پلاک ۵ - طبقه‌ی سوم</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div id="list30" style="width:100%;height:300px;display:none;float:left;overflow-x:hidden;margin-bottom:15px;"><img src="images/x.png" class="x">
+                                                <table style="width:100%;text-align:center;" border="1px">
+                                                    <thead style="font-weight:bold;background:lightgray;">
+                                                        <td>ردیف</td>
+                                                        <td>نوع محصول/خدمت</td>
+                                                        <td>نام محصول</td>
+                                                        <td>برند</td>
+                                                        <td>قیمت اصلی(ریال)</td>
+                                                        <td>درصد تخفیف</td>
+                                                        <td>قیمت نهایی(ریال)</td>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>۱</td>
+                                                        <td>محصول شماره۱</td>
+                                                        <td>کد ۴۲</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۲</td>
+                                                        <td>محصول شماره۲</td>
+                                                        <td>کد ۴۳</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۳</td>
+                                                        <td>محصول شماره۳</td>
+                                                        <td>کد ۴۴</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۴</td>
+                                                        <td>محصول شماره۴</td>
+                                                        <td>کد ۴۵</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۵</td>
+                                                        <td>محصول شماره۵</td>
+                                                        <td>کد ۴۶</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۶</td>
+                                                        <td>محصول شماره۶</td>
+                                                        <td>کد ۴۷</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۷</td>
+                                                        <td>محصول شماره۷</td>
+                                                        <td>کد ۴۸</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۸</td>
+                                                        <td>محصول شماره۸</td>
+                                                        <td>کد ۴۹</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۹</td>
+                                                        <td>محصول شماره۹</td>
+                                                        <td>کد ۵۰</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۰</td>
+                                                        <td>محصول شماره۱۰</td>
+                                                        <td>کد ۵۱</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۱</td>
+                                                        <td>محصول شماره۱۱</td>
+                                                        <td>کد ۵۲</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۲</td>
+                                                        <td>محصول شماره۱۲</td>
+                                                        <td>کد ۵۳</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۳</td>
+                                                        <td>محصول شماره۱۳</td>
+                                                        <td>کد ۵۴</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۴</td>
+                                                        <td>محصول شماره۱۴</td>
+                                                        <td>کد ۵۵</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۵</td>
+                                                        <td>محصول شماره۱۵</td>
+                                                        <td>کد ۵۶</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                </table>
+                                                </div>
+                                            <td>
+                                        </tr>
+                                        <tr id="div4">
+                                            <td style="height:104px;border:1px solid black;vertical-align:top;">
+                                                <p class="p-text">مجموعه‌ی تشریفاتی تهران شما را به بازدید از <a href="http://talar-tehran.ir/" target="_blank">www.talar-tehran.ir</a> دعوت مینماید.</p>
+                                                <div id="image4" style="margin:2px 5px;width:75px;height:75px;float:right; background:url('images/img.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="tour4" style="margin:2px 5px;width:75px;height:75px;float:right; border-radius:105px;background:url('images/vr1.png');background-size:75px 75px;">
+                                                </div>
+                                                <div id="senf4" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/license.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="contact4" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/contact.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="list4" style="margin:2px 5px;width:75px;height:75px;float:right;background:url('images/list.png'); background-size:75px 75px;">
+                                                </div>
+                                                <div id="ads4" style="width:400px;height:75px;float:right;background:url('images/tumar.png'); background-size:400px 75px;">
+                                                    <p style="color:black;margin-top:25px;">
+                                                        <div id="text-slider4" class="text-slider">
+                                                            <ul>
+                                                                <li>فضای بسیار زیبا و رویایی برای عروس و داماد</li>
+                                                                <li>با ظرفیت 300 نفر آماده ارائه خدمات</li>
+                                                                <li>سفره عقد مجلل در طبقه‌ی اول</li>
+                                                                <li>به پاس قدر دانی از شما، 70٪ تخفیف ویژه</li>
+                                                                    <li>آماده ی پذیرایی از مجالس و جشنهای شما</li>
+                                                            </ul>  
+                                                        </div>
+                                                    </p>
+                                                </div>
+                                                <div id="image40" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    
+                                                </div>
+                                                <div id="tour40" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    
+                                                </div>
+                                                <div id="senf40" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    
+                                                </div>
+                                                <div id="contact40" style="width:100%;height:300px; display:none;float:left;"><img src="images/x.png" class="x">
+                                                    <table class="contact">
+                                                        <tr>
+                                                            <td>تلفن تماس:</td>
+                                                            <td>021-12345678</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>تلفن همراه:</td>
+                                                            <td>09123456789</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>پیامک:</td>
+                                                            <td>50001234</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>فکس:</td>
+                                                            <td>021-12345678</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>ایمیل:</td>
+                                                            <td>info@tehrank.ir</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>وبسایت:</td>
+                                                            <td><a href="http://tehrank.ir">tehrank.ir</a></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>نشانی:</td>
+                                                            <td>تهران - خیابان فلسطین - خیابان ۱۷ - کوچه ۳ - پلاک ۵ - طبقه‌ی سوم</td>
+                                                        </tr>
+                                                    </table>
+                                                </div>
+                                                <div id="list40" style="width:100%;height:300px;display:none;float:left;overflow-x:hidden;margin-bottom:15px;"><img src="images/x.png" class="x">
+                                                <table style="width:100%;text-align:center;" border="1px">
+                                                    <thead style="font-weight:bold;background:lightgray;">
+                                                        <td>ردیف</td>
+                                                        <td>نوع محصول/خدمت</td>
+                                                        <td>نام محصول</td>
+                                                        <td>برند</td>
+                                                        <td>قیمت اصلی(ریال)</td>
+                                                        <td>درصد تخفیف</td>
+                                                        <td>قیمت نهایی(ریال)</td>
+                                                    </thead>
+                                                    <tr>
+                                                        <td>۱</td>
+                                                        <td>محصول شماره۱</td>
+                                                        <td>کد ۴۲</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۲</td>
+                                                        <td>محصول شماره۲</td>
+                                                        <td>کد ۴۳</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۳</td>
+                                                        <td>محصول شماره۳</td>
+                                                        <td>کد ۴۴</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۴</td>
+                                                        <td>محصول شماره۴</td>
+                                                        <td>کد ۴۵</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۵</td>
+                                                        <td>محصول شماره۵</td>
+                                                        <td>کد ۴۶</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۶</td>
+                                                        <td>محصول شماره۶</td>
+                                                        <td>کد ۴۷</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۷</td>
+                                                        <td>محصول شماره۷</td>
+                                                        <td>کد ۴۸</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۸</td>
+                                                        <td>محصول شماره۸</td>
+                                                        <td>کد ۴۹</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۹</td>
+                                                        <td>محصول شماره۹</td>
+                                                        <td>کد ۵۰</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۰</td>
+                                                        <td>محصول شماره۱۰</td>
+                                                        <td>کد ۵۱</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۱</td>
+                                                        <td>محصول شماره۱۱</td>
+                                                        <td>کد ۵۲</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۲</td>
+                                                        <td>محصول شماره۱۲</td>
+                                                        <td>کد ۵۳</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۳</td>
+                                                        <td>محصول شماره۱۳</td>
+                                                        <td>کد ۵۴</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۴</td>
+                                                        <td>محصول شماره۱۴</td>
+                                                        <td>کد ۵۵</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>۱۵</td>
+                                                        <td>محصول شماره۱۵</td>
+                                                        <td>کد ۵۶</td>
+                                                        <td>نوع برند</td>
+                                                        <td>۱۰۰٫۰۰۰</td>
+                                                        <td>۵۰٪</td>
+                                                        <td>۵۰٫۰۰۰</td>
+                                                    </tr>
+                                                </table>
+                                                </div>
+                                            <td>
+                                        </tr>
+                                    </table></table></div>
+							</div>
+<script src="../imagelightbox.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../imagelightbox.css"><div class="div-content" id="div-content-1" style="padding:5px; height:448px; width:100%; background:#d7ff6f;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/1.png">
+			<h2 class="header">آموزشگاه ها</h2><ul style="float:right;"><li style="cursor:pointer;" id="a1"><a href="?content=1">مدارس دولتی</a></li><li style="cursor:pointer;" id="a2"><a href="?content=2">مدارس غیر انتفاعی</a></li><li style="cursor:pointer;" id="a3"><a href="?content=3">آموزشگاهای فنی و حرفه ای</a></li><li style="cursor:pointer;" id="a4"><a href="?content=4">پیش دبستانی و مهد کودک</a></li><li style="cursor:pointer;" id="a5"><a href="?content=5">آرایش</a></li><li style="cursor:pointer;" id="a6"><a href="?content=6">پیرایش</a></li><li style="cursor:pointer;" id="a7"><a href="?content=7">آشپزی و شیرینی پزی</a></li><li style="cursor:pointer;" id="a8"><a href="?content=8">آموزشگاه خیاطی</a></li><li style="cursor:pointer;" id="a9"><a href="?content=9">آموزشگاه رانندگی</a></li><li style="cursor:pointer;" id="a10"><a href="?content=10">آموزشگاههای زبانهای خارجی</a></li><li style="cursor:pointer;" id="a11"><a href="?content=11">آموزشگاههای علمی و تدریس خصوصی</a></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a12"><a href="?content=12">آموزشگاههای هنری</a></li><li style="cursor:pointer;" id="a13"><a href="?content=13">آموزشگاه کامپیوتر</a></li><li style="cursor:pointer;" id="a14"><a href="?content=14">آموزشگاه موسیقی</a></li><li style="cursor:pointer;" id="a15"><a href="?content=15">آموزشگاه بافندگی</a></li><li style="cursor:pointer;" id="a16"><a href="?content=16">آموزشگاه قالی بافی</a></li><li style="cursor:pointer;" id="a17"><a href="?content=17">آموزشگاه علمی و کنکوری</a></li><li style="cursor:pointer;" id="a18"><a href="?content=18">آموزشگاه سینمایی</a></li><li style="cursor:pointer;" id="a19"><a href="?content=19">آموزشگاه عکاسی و فیلمبرداری</a></li><li style="cursor:pointer;" id="a20"><a href="?content=20">آموزشگاه آموزش از راه دور</a></li></ul></div></div><div class="div-content" id="div-content-2" style="padding:5px; height:448px; width:100%; background:#feff80;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/2.png">
+			<h2 class="header">خدمات خودرویی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a21"><a href="?content=21">نمایشگاه اتومبیل های سبک</a></li><li style="cursor:pointer;" id="a22"><a href="?content=22">نمایشگاه اتومبیل های سنگین</a></li><li style="cursor:pointer;" id="a23"><a href="?content=23">نمایندگی های مجاز</a></li><li style="cursor:pointer;" id="a24"><a href="?content=24">لوازم یدکی</a></li><li style="cursor:pointer;" id="a25"><a href="?content=25">تزئینات خودرو</a></li><li style="cursor:pointer;" id="a26"><a href="?content=26">تعمیرگاهی</a></li><li style="cursor:pointer;" id="a27"><a href="?content=27">اتو سرویس</a></li><li style="cursor:pointer;" id="a28"><a href="?content=28">خدمات اسپرت و لاستیک</a></li><li style="cursor:pointer;" id="a29"><a href="?content=29">نمایشگاه موتور سیکلت</a></li><li style="cursor:pointer;" id="a30"><a href="?content=30">لوازم یدکی موتور</a></li><li style="cursor:pointer;" id="a31"><a href="?content=31">تعمیرگاهی</a></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a32"><a href="?content=32">تزئینات موتور</a></li><li style="cursor:pointer;" id="a33"><a href="?content=33">دوچرخه فروشی</a></li><li style="cursor:pointer;" id="a34"><a href="?content=34">دوچرخه سازی</a></li></ul></div></div><div class="div-content" id="div-content-3" style="padding:5px; height:448px; width:100%; background:#ffe789;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/3.png">
+			<h2 class="header">فروشگاه ها</h2><ul style="float:right;"><li style="cursor:pointer;" id="a35"><a href="?content=35">فروشگاههای تعاونی مصرف</a></li><li style="cursor:pointer;" id="a36"><a href="?content=36">فروشگاههای زنجیره ای</a></li><li style="cursor:pointer;" id="a37"><a href="?content=37">فروشگاه های هایپر</a></li></ul></div></div><div class="div-content" id="div-content-4" style="padding:5px; height:448px; width:100%; background:#ffbe6a;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/4.png">
+			<h2 class="header">اغذیه</h2><ul style="float:right;"><li style="cursor:pointer;" id="a38"><a href="?content=38">رستوران</a></li><li style="cursor:pointer;" id="a39"><a href="?content=39">تالار</a></li><li style="cursor:pointer;" id="a40"><a href="?content=40">کافی شاپ</a></li><li style="cursor:pointer;" id="a41"><a href="?content=41">سفره خانه</a></li><li style="cursor:pointer;" id="a42"><a href="?content=42">فست فود</a></li><li style="cursor:pointer;" id="a43"><a href="?content=43">تهیه غذا ، کترینگ</a></li><li style="cursor:pointer;" id="a44"><a href="?content=44">چلو کبابی</a></li><li style="cursor:pointer;" id="a45"><a href="?content=45">کبابی و جگرکی</a></li><li style="cursor:pointer;" id="a46"><a href="?content=46">کلّه پزی</a></li><li style="cursor:pointer;" id="a47"><a href="?content=47">سفره خانه و دیزی سرا</a></li><li style="cursor:pointer;" id="a48"><a href="?content=48">آبمیوه ، بستنی</a></li></ul><ul style='float:right;margin-right:25px;'></ul></div></div><div class="div-content" id="div-content-5" style="padding:5px; height:448px; width:100%; background:#ff945f;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/5.png">
+			<h2 class="header">کادویی و دکوری</h2><ul style="float:right;"><li style="cursor:pointer;" id="a49"><a href="?content=49">طلا و جواهرات</a></li><li style="cursor:pointer;" id="a50"><a href="?content=50">بدلیجات و نقره سرا</a></li><li style="cursor:pointer;" id="a51"><a href="?content=51">اجناس کادویی</a></li><li style="cursor:pointer;" id="a52"><a href="?content=52">اسباب بازی فروشی</a></li><li style="cursor:pointer;" id="a53"><a href="?content=53">صنایع دستی</a></li><li style="cursor:pointer;" id="a54"><a href="?content=54">فروش و تعمیر ساعت</a></li></ul></div></div><div class="div-content" id="div-content-6" style="padding:5px; height:448px; width:100%; background:#ff7e7e;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/6.png">
+			<h2 class="header">پوشاک و البسه</h2><ul style="float:right;"><li style="cursor:pointer;" id="a55"><a href="?content=55">گالری پوشاک مردانه</a></li><li style="cursor:pointer;" id="a56"><a href="?content=56">گالری پوشاک زنانه</a></li><li style="cursor:pointer;" id="a57"><a href="?content=57">گالری پوشاک بچه گانه</a></li><li style="cursor:pointer;" id="a58"><a href="?content=58">تولیدی پوشاک</a></li><li style="cursor:pointer;" id="a59"><a href="?content=59">پارچه فروشی</a></li><li style="cursor:pointer;" id="a60"><a href="?content=60">خیاطی</a></li><li style="cursor:pointer;" id="a61"><a href="?content=61">لوازم خیاطی و بافتنی</a></li><li style="cursor:pointer;" id="a62"><a href="?content=62">کیف و کفش</a></li><li style="cursor:pointer;" id="a63"><a href="?content=63">مزون و لباس عروس</a></li><li style="cursor:pointer;" id="a64"><a href="?content=64">خدمات رنگرزی ، چاپ</a></li><li style="cursor:pointer;" id="a65"><a href="?content=65">خشکشویی</a></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a66"><a href="?content=66">ایمنی و آتش نشانی</a></li></ul></div></div><div class="div-content" id="div-content-7" style="padding:5px; height:448px; width:100%; background:#ff8abb;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/7.png">
+			<h2 class="header">اداری و مالی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a67"><a href="?content=67">موسسات مالی و اعتباری</a></li><li style="cursor:pointer;" id="a68"><a href="?content=68">صرافی ها</a></li><li style="cursor:pointer;" id="a69"><a href="?content=69">ثبت و رتبه بندی شرکتها</a></li><li style="cursor:pointer;" id="a70"><a href="?content=70">حسابداری و حسابرسی</a></li><li style="cursor:pointer;" id="a71"><a href="?content=71">ماشینهای اداری و محاسباتی</a></li></ul></div></div><div class="div-content" id="div-content-8" style="padding:5px; height:448px; width:100%; background:#ff79e3;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/8.png">
+			<h2 class="header">خدمات شهری</h2><ul style="float:right;"><li style="cursor:pointer;" id="a72"><a href="?content=72">پلیس + 10</a></li><li style="cursor:pointer;" id="a73"><a href="?content=73">دفاتر ازدواج و طلاق</a></li><li style="cursor:pointer;" id="a74"><a href="?content=74">دفاتر اسناد رسمی</a></li><li style="cursor:pointer;" id="a75"><a href="?content=75">دفاتر خدمات پستی</a></li><li style="cursor:pointer;" id="a76"><a href="?content=76">دفاتر پیشخوان دولت</a></li><li style="cursor:pointer;" id="a77"><a href="?content=77">دفاتر وکالت</a></li><li style="cursor:pointer;" id="a78"><a href="?content=78">دارالترجمه</a></li><li style="cursor:pointer;" id="a79"><a href="?content=79">آسایشگاهها</a></li></ul></div></div><div class="div-content" id="div-content-9" style="padding:5px; height:448px; width:100%; background:#e487ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/9.png">
+			<h2 class="header">ساختمان و صنایع وابسته</h2><ul style="float:right;"><li style="cursor:pointer;" id="a80"><a href="?content=80">شرکتهای پیمانکاری</a></li><li style="cursor:pointer;" id="a81"><a href="?content=81">ایزو گام و عایق رطوبتی</a></li><li style="cursor:pointer;" id="a82"><a href="?content=82">خدمات آسانسور</a></li><li style="cursor:pointer;" id="a83"><a href="?content=83">تأسیسات</a></li><li style="cursor:pointer;" id="a84"><a href="?content=84">داربست</a></li><li style="cursor:pointer;" id="a85"><a href="?content=85">ابزار آلات ساختمانی</a></li><li style="cursor:pointer;" id="a86"><a href="?content=86">ابزار آلات ساختمانی</a></li><li style="cursor:pointer;" id="a87"><a href="?content=87">درب و پنجره</a></li><li style="cursor:pointer;" id="a88"><a href="?content=88">کابینت و تجهیزات آشپزخانه</a></li><li style="cursor:pointer;" id="a89"><a href="?content=89">کرایه ماشین آلات</a></li><li style="cursor:pointer;" id="a90"><a href="?content=90">دکوراسیون و تزئنات</a></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a91"><a href="?content=91">سیم های هوشمند ساختمانی</a></li><li style="cursor:pointer;" id="a92"><a href="?content=92">نما کاری</a></li><li style="cursor:pointer;" id="a93"><a href="?content=93">لوازم بهداشتی</a></li></ul></div></div><div class="div-content" id="div-content-10" style="padding:5px; height:448px; width:100%; background:#d9a9ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/10.png">
+			<h2 class="header">لوازم خانگی و اداری</h2><ul style="float:right;"><li style="cursor:pointer;" id="a94"><a href="?content=94">فروشگاه لوازم خانگی</a></li><li style="cursor:pointer;" id="a95"><a href="?content=95">فروشگاه لوازم اداری</a></li><li style="cursor:pointer;" id="a96"><a href="?content=96">فروشگاه لوازم پلاستیکی</a></li><li style="cursor:pointer;" id="a97"><a href="?content=97">مبلمان و سرویس خواب</a></li><li style="cursor:pointer;" id="a98"><a href="?content=98">فرش و موکت</a></li><li style="cursor:pointer;" id="a99"><a href="?content=99">پرده سرا</a></li><li style="cursor:pointer;" id="a100"><a href="?content=100">سمساری</a></li><li style="cursor:pointer;" id="a101"><a href="?content=101">تعمیر و خدمات لوازم خانگی</a></li><li style="cursor:pointer;" id="a102"><a href="?content=102">کرایه‌ی لوازم خانگی</a></li></ul></div></div><div class="div-content" id="div-content-11" style="padding:5px; height:448px; width:100%; background:#bca0ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/11.png">
+			<h2 class="header">تلفن همراه</h2><ul style="float:right;"><li style="cursor:pointer;" id="a103"><a href="?content=103">فروشگاه موبایل و لوازم جانبی</a></li><li style="cursor:pointer;" id="a104"><a href="?content=104">فروشگاه دوربین های مدار بسته و امنیتی</a></li><li style="cursor:pointer;" id="a105"><a href="?content=105">تعمیرات و خدمات پس از فروش</a></li></ul></div></div><div class="div-content" id="div-content-12" style="padding:5px; height:448px; width:100%; background:#a9c7ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/12.png">
+			<h2 class="header">حمل و نقل</h2><ul style="float:right;"><li style="cursor:pointer;" id="a106"><a href="?content=106">اتوبار و حمل و نقل سبک</a></li><li style="cursor:pointer;" id="a107"><a href="?content=107">باربری و حمل و نقل سنگین</a></li><li style="cursor:pointer;" id="a108"><a href="?content=108">حمل و نقل بین الملی</a></li><li style="cursor:pointer;" id="a109"><a href="?content=109">مسافربری و حمل و نقل جاده ای</a></li><li style="cursor:pointer;" id="a110"><a href="?content=110">تاکسی تلفنی</a></li><li style="cursor:pointer;" id="a111"><a href="?content=111">پیک موتوری</a></li></ul></div></div><div class="div-content" id="div-content-13" style="padding:5px; height:448px; width:100%; background:#a6deff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/13.png">
+			<h2 class="header">فرهنگی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a112"><a href="?content=112">خانه های فرهنگ ( فرهنگسرا)</a></li><li style="cursor:pointer;" id="a113"><a href="?content=113">نگارستانها</a></li><li style="cursor:pointer;" id="a114"><a href="?content=114">خبر گزاریها</a></li><li style="cursor:pointer;" id="a115"><a href="?content=115">مجموعه های فرهنگی</a></li><li style="cursor:pointer;" id="a116"><a href="?content=116">دارالترجمه و مترجمین</a></li><li style="cursor:pointer;" id="a117"><a href="?content=117">نشریات</a></li><li style="cursor:pointer;" id="a118"><a href="?content=118">کتاب فروشی</a></li><li style="cursor:pointer;" id="a119"><a href="?content=119">ویدئو کلوپ</a></li></ul></div></div><div class="div-content" id="div-content-14" style="padding:5px; height:448px; width:100%; background:#91f4ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/14.png">
+			<h2 class="header">آموزشی تحصیلی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a120"><a href="?content=120">نوشت افزار و لوازم التحریر</a></li><li style="cursor:pointer;" id="a121"><a href="?content=121">فروشگاه نرم افزارهای درسی و کمک آموزشی</a></li></ul></div></div><div class="div-content" id="div-content-15" style="padding:5px; height:448px; width:100%; background:#97ffdf;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/15.png">
+			<h2 class="header">چاپ و تبلیغات</h2><ul style="float:right;"><li style="cursor:pointer;" id="a122"><a href="?content=122">خدمات و طراحی و گرافیک</a></li><li style="cursor:pointer;" id="a123"><a href="?content=123">تکثیر چاپخانه ای</a></li><li style="cursor:pointer;" id="a124"><a href="?content=124">تایپ و تکثیر جزئی</a></li><li style="cursor:pointer;" id="a125"><a href="?content=125">تابلو سازی</a></li><li style="cursor:pointer;" id="a126"><a href="?content=126">اشیاء و هدایای تبلیغاتی</a></li><li style="cursor:pointer;" id="a127"><a href="?content=127">کلیشه و مهر</a></li><li style="cursor:pointer;" id="a128"><a href="?content=128">صحافی</a></li><li style="cursor:pointer;" id="a129"><a href="?content=129">لیتوگرافی</a></li><li style="cursor:pointer;" id="a130"><a href="?content=130">تبلیغات محیطی</a></li></ul></div></div><div class="div-content" id="div-content-16" style="padding:5px; height:448px; width:100%; background:#8fffc2;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/16.png">
+			<h2 class="header">مشاوره</h2><ul style="float:right;"><li style="cursor:pointer;" id="a131"><a href="?content=131">ازدواج</a></li><li style="cursor:pointer;" id="a132"><a href="?content=132">حقوقی</a></li><li style="cursor:pointer;" id="a133"><a href="?content=133">تحصیلی</a></li><li style="cursor:pointer;" id="a134"><a href="?content=134">ژنتیک</a></li><li style="cursor:pointer;" id="a135"><a href="?content=135">کاریابی</a></li><li style="cursor:pointer;" id="a136"><a href="?content=136">بازرگانی</a></li><li style="cursor:pointer;" id="a137"><a href="?content=137">شغلی</a></li><li style="cursor:pointer;" id="a138"><a href="?content=138">مهندسی</a></li><li style="cursor:pointer;" id="a139"><a href="?content=139">روانشناختی</a></li><li style="cursor:pointer;" id="a140"><a href="?content=140">کشاورزی</a></li><li style="cursor:pointer;" id="a141"><a href="?content=141">املاک</a></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a142"><a href="?content=142">تغذیه</a></li><li style="cursor:pointer;" id="a143"><a href="?content=143">ورزشی</a></li></ul></div></div><div class="div-content" id="div-content-17" style="padding:5px; height:448px; width:100%; background:#d7ff6f;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/17.png">
+			<h2 class="header">حیوانات خانگی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a144"><a href="?content=144">مراکز خرید و فروش</a></li><li style="cursor:pointer;" id="a145"><a href="?content=145">کلینیک دامپزشکی</a></li><li style="cursor:pointer;" id="a146"><a href="?content=146">داروخانه</a></li><li style="cursor:pointer;" id="a147"><a href="?content=147">تجهیزات و لوازم نگهداری</a></li></ul></div></div><div class="div-content" id="div-content-18" style="padding:5px; height:448px; width:100%; background:#feff80;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/18.png">
+			<h2 class="header">خدمات در منزل</h2><ul style="float:right;"><li style="cursor:pointer;" id="a148"><a href="?content=148">تدریس خصوصی</a></li><li style="cursor:pointer;" id="a149"><a href="?content=149">امور نظافتی و مراقبتی</a></li><li style="cursor:pointer;" id="a150"><a href="?content=150">کف سابی و دیوار شویی</a></li><li style="cursor:pointer;" id="a151"><a href="?content=151">قالی شویی و شستشوی مبلمان</a></li></ul></div></div><div class="div-content" id="div-content-19" style="padding:5px; height:448px; width:100%; background:#ffbe6a;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/19.png">
+			<h2 class="header">خدمات صنعتی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a152"><a href="?content=152">آهن آلات</a></li><li style="cursor:pointer;" id="a153"><a href="?content=153">ضایعات</a></li><li style="cursor:pointer;" id="a154"><a href="?content=154">ابزار یراق</a></li><li style="cursor:pointer;" id="a155"><a href="?content=155">بسته بندی کالا</a></li><li style="cursor:pointer;" id="a156"><a href="?content=156">تراشکاری و سری سازی</a></li><li style="cursor:pointer;" id="a157"><a href="?content=157">صنایع فلز و آلومینیم</a></li><li style="cursor:pointer;" id="a158"><a href="?content=158">صنایع چوبی</a></li><li style="cursor:pointer;" id="a159"><a href="?content=159">کارتن سازی</a></li><li style="cursor:pointer;" id="a160"><a href="?content=160">کانکس، کانتینر و کاروان</a></li></ul></div></div><div class="div-content" id="div-content-20" style="padding:5px; height:448px; width:100%; background:#ff945f;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/20.png">
+			<h2 class="header">املاک</h2><ul style="float:right;"><li style="cursor:pointer;" id="a161"><a href="?content=161">مشاورین املاک</a></li><li style="cursor:pointer;" id="a162"><a href="?content=162">انجام امور اداری ثبتی ، شهرداری و ...</a></li><li style="cursor:pointer;" id="a163"><a href="?content=163">آگهی مناقصه و مزایده</a></li></ul></div></div><div class="div-content" id="div-content-21" style="padding:5px; height:448px; width:100%; background:#ff7e7e;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/21.png">
+			<h2 class="header">مواد غذایی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a164"><a href="?content=164">قنادی و شیرینی پزی</a></li><li style="cursor:pointer;" id="a165"><a href="?content=165">عصاره فروشی و عرقیجات</a></li><li style="cursor:pointer;" id="a166"><a href="?content=166">دم نوش و ترشیجات</a></li><li style="cursor:pointer;" id="a167"><a href="?content=167">سوغاتی</a></li><li style="cursor:pointer;" id="a168"><a href="?content=168">مواد غذایی ارگانیک</a></li><li style="cursor:pointer;" id="a169"><a href="?content=169">عمده فروشی</a></li><li style="cursor:pointer;" id="a170"><a href="?content=170">خشکه پزی و نان فانتزی</a></li><li style="cursor:pointer;" id="a171"><a href="?content=171">پروتئینی</a></li><li style="cursor:pointer;" id="a172"><a href="?content=172">آجیل و خشکبار</a></li><li style="cursor:pointer;" id="a173"><a href="?content=173">خوارو بار</a></li><li style="cursor:pointer;" id="a174"><a href="?content=174">آبمیوه و بستنی</a></li></ul><ul style='float:right;margin-right:25px;'></ul></div></div><div class="div-content" id="div-content-22" style="padding:5px; height:448px; width:100%; background:#ff8abb;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/22.png">
+			<h2 class="header">نرم افزار و سخت افزار</h2><ul style="float:right;"><li style="cursor:pointer;" id="a175"><a href="?content=175">خدمات اینترنت پر سرعت</a></li><li style="cursor:pointer;" id="a176"><a href="?content=176">خدمات وب و شبکه</a></li><li style="cursor:pointer;" id="a177"><a href="?content=177">فروش ، نصب و تعمیر سخت افزار</a></li><li style="cursor:pointer;" id="a178"><a href="?content=178">ماشین آلات اداری و الکترونیکی</a></li><li style="cursor:pointer;" id="a179"><a href="?content=179">فروش نرم افزار</a></li><li style="cursor:pointer;" id="a180"><a href="?content=180">بازیهای رایانه ای</a></li></ul></div></div><div class="div-content" id="div-content-23" style="padding:5px; height:448px; width:100%; background:#98ff98;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/23.png">
+			<h2 class="header">ویژه زوجین</h2><ul style="float:right;"><li style="cursor:pointer;" id="a181"><a href="?content=181">لوازم خانگی</a></li><li style="cursor:pointer;" id="a182"><a href="?content=182">زناشویی</a></li><li style="cursor:pointer;" id="a183"><a href="?content=183">زیورالات</a></li><li style="cursor:pointer;" id="a184"><a href="?content=184">لوازم بهداشتی</a></li><li style="cursor:pointer;" id="a185"><a href="?content=185">مبلمان و سرویس خواب</a></li><li style="cursor:pointer;" id="a186"><a href="?content=186">آموزش</a></li><li style="cursor:pointer;" id="a187"><a href="?content=187">باغ و تالار پذیرایی</a></li><li style="cursor:pointer;" id="a188"><a href="?content=188">خدمات و همایش و سمینار</a></li><li style="cursor:pointer;" id="a189"><a href="?content=189">محضر ازدواج و طلاق</a></li><li style="cursor:pointer;" id="a190"><a href="?content=190">کرایه ملزومات مجالس و مراسم</a></li><li style="cursor:pointer;" id="a191"><a href="?content=191">خدمات جشن عقد، ازدواج ، تولّد</a></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a192"><a href="?content=192">گل فروشی و تزئین اتومبیل</a></li><li style="cursor:pointer;" id="a193"><a href="?content=193">آتیله عکاسی و فیلمبرداری</a></li><li style="cursor:pointer;" id="a194"><a href="?content=194">کرایه اتومبیل</a></li><li style="cursor:pointer;" id="a195"><a href="?content=195">اجرای موزیک</a></li><li style="cursor:pointer;" id="a196"><a href="?content=196">کارت دعوت</a></li><li style="cursor:pointer;" id="a197"><a href="?content=197">مولودی خوانی و مرثیه سرایی</a></li><li style="cursor:pointer;" id="a198"><a href="?content=198">البسه مجلسی</a></li><li style="cursor:pointer;" id="a199"><a href="?content=199">کلینیک های زیبایی بانوان</a></li><li style="cursor:pointer;" id="a200"><a href="?content=200">سالن ها و خدمات پیرایشی آقایان</a></li><li style="cursor:pointer;" id="a201"><a href="?content=201">بوتیک و محصولات آرایشی و بهداشتی</a></li><li style="cursor:pointer;" id="a202"><a href="?content=202">آموزشگاه آرایشی بانوان</a></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a203"><a href="?content=203">آموزشگاه پیرایشی آقایان</a></li></ul></div></div><div class="div-content" id="div-content-24" style="padding:5px; height:448px; width:100%; background:#bca0ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/24.png">
+			<h2 class="header">ویژه آقایان</h2><ul style="float:right;"><li style="cursor:pointer;" id="a204"><a href="?content=204">لباس و البسه</a></li><li style="cursor:pointer;" id="a205"><a href="?content=205">زیورالات</a></li><li style="cursor:pointer;" id="a206"><a href="?content=206">آموزشگاه ها</a></li><li style="cursor:pointer;" id="a207"><a href="?content=207">سالن زیبایی</a></li><li style="cursor:pointer;" id="a208"><a href="?content=208">زناشویی</a></li><li style="cursor:pointer;" id="a209"><a href="?content=209">بهداشتی</a></li></ul></div></div><div class="div-content" id="div-content-25" style="padding:5px; height:448px; width:100%; background:#d9a9ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/25.png">
+			<h2 class="header">ویژه بانوان</h2><ul style="float:right;"><li style="cursor:pointer;" id="a210"><a href="?content=210">لباس و البسه</a></li><li style="cursor:pointer;" id="a211"><a href="?content=211">زیورالات</a></li><li style="cursor:pointer;" id="a212"><a href="?content=212">آموزشگاه ها</a></li><li style="cursor:pointer;" id="a213"><a href="?content=213">سالن زیبایی</a></li><li style="cursor:pointer;" id="a214"><a href="?content=214">زناشویی</a></li><li style="cursor:pointer;" id="a215"><a href="?content=215">بهداشتی</a></li></ul></div></div><div class="div-content" id="div-content-26" style="padding:5px; height:448px; width:100%; background:#e487ff;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/26.png">
+			<h2 class="header">ویژه کودک و نوجوان</h2><ul style="float:right;"><li style="cursor:pointer;" id="a216"><a href="?content=216">مدارس</a></li><li style="cursor:pointer;" id="a217"><a href="?content=217">پوشاک</a></li><li style="cursor:pointer;" id="a218"><a href="?content=218">آموزشگاه</a></li><li style="cursor:pointer;" id="a219"><a href="?content=219">تدریس خصوصی</a></li><li style="cursor:pointer;" id="a220"><a href="?content=220">مشاوره</a></li></ul></div></div><div class="div-content" id="div-content-27" style="padding:5px; height:448px; width:100%; background:#ff79e3;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/27.png">
+			<h2 class="header">ویژه نوزادان</h2><ul style="float:right;"><li style="cursor:pointer;" id="a221"><a href="?content=221">سیسمونی</a></li><li style="cursor:pointer;" id="a222"><a href="?content=222">پزشکی</a></li></ul></div></div><div class="div-content" id="div-content-28" style="padding:5px; height:448px; width:100%; background:#ff8abb;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/28.png">
+			<h2 class="header">بهداشتی درمانی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a223"><a href="?content=223">آزمایشگاه تشخیص طبی</a></li><li style="cursor:pointer;" id="a224"><a href="?content=224">کلینیک درمانی خصوصی</a></li><li style="cursor:pointer;" id="a225"><a href="?content=225">کلینیک زیبایی</a></li><li style="cursor:pointer;" id="a226"><a href="?content=226">کلینیک توانبخشی</a></li><li style="cursor:pointer;" id="a227"><a href="?content=227">لوازم پزشکی ، آزمایشگاهی و درمانی</a></li><li style="cursor:pointer;" id="a228"><a href="?content=228">داروخانه</a></li><li style="cursor:pointer;" id="a229"><a href="?content=229">مراکز ترک اعتیاد</a></li><li style="cursor:pointer;" id="a230"><a href="?content=230">دارو گیاهی و عطاریها</a></li></ul></div></div><div class="div-content" id="div-content-29" style="padding:5px; height:448px; width:100%; background:#ff7e7e;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/29.png">
+			<h2 class="header">پزشکی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a231"><a href="?content=231">پزشک عمومی و جراح</a></li><li style="cursor:pointer;" id="a232"><a href="?content=232">داخلی و اطفال</a></li><li style="cursor:pointer;" id="a233"><a href="?content=233">زنان ، زایمان ، نازایی</a></li><li style="cursor:pointer;" id="a234"><a href="?content=234">چشم پزشکی و بینایی سنجی</a></li><li style="cursor:pointer;" id="a235"><a href="?content=235">دهان و دندان</a></li><li style="cursor:pointer;" id="a236"><a href="?content=236">ریه و دستگاه تنفسی</a></li><li style="cursor:pointer;" id="a237"><a href="?content=237">شنوایی سنجی</a></li><li style="cursor:pointer;" id="a238"><a href="?content=238">طب سنتی و سوزنی</a></li><li style="cursor:pointer;" id="a239"><a href="?content=239">پوست و مو و زیبایی</a></li><li style="cursor:pointer;" id="a240"><a href="?content=240">تغذیه و رژیم درمانی</a></li><li style="cursor:pointer;" id="a241"><a href="?content=241">غدد و عفونی</a></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a242"><a href="?content=242">قلب و عروق</a></li><li style="cursor:pointer;" id="a243"><a href="?content=243">گفتار درمانی</a></li><li style="cursor:pointer;" id="a244"><a href="?content=244">کبد و گوارش</a></li><li style="cursor:pointer;" id="a245"><a href="?content=245">گوش حلق و بینی</a></li><li style="cursor:pointer;" id="a246"><a href="?content=246">مغز و اعصاب و روان</a></li><li style="cursor:pointer;" id="a247"><a href="?content=247">مشاوره روانشناسی و روانپزشکی</a></li><li style="cursor:pointer;" id="a248"><a href="?content=248">آلرژی</a></li><li style="cursor:pointer;" id="a249"><a href="?content=249">مامایی</a></li><li style="cursor:pointer;" id="a250"><a href="?content=250">کلیوی ، تناسلی و اداری</a></li><li style="cursor:pointer;" id="a251"><a href="?content=251">عفونی</a></li><li style="cursor:pointer;" id="a252"><a href="?content=252">مفاصل و استخوان</a></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a253"><a href="?content=253">ارتوپدی</a></li><li style="cursor:pointer;" id="a254"><a href="?content=254">رادیولوژی</a></li><li style="cursor:pointer;" id="a255"><a href="?content=255">سونوگرافی</a></li><li style="cursor:pointer;" id="a256"><a href="?content=256">اورولوژی</a></li><li style="cursor:pointer;" id="a257"><a href="?content=257">ایموتولوژی</a></li><li style="cursor:pointer;" id="a258"><a href="?content=258">رادیوتراپی</a></li><li style="cursor:pointer;" id="a259"><a href="?content=259">فیزیوتراپی</a></li><li style="cursor:pointer;" id="a260"><a href="?content=260">نفرولوژی</a></li><li style="cursor:pointer;" id="a261"><a href="?content=261">هماتولوژی</a></li><li style="cursor:pointer;" id="a262"><a href="?content=262">روماتولوژی</a></li><li style="cursor:pointer;" id="a263"><a href="?content=263">اندوسکوپی</a></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a264"><a href="?content=264">ماموگرافی</a></li><li style="cursor:pointer;" id="a265"><a href="?content=265">پاتولوژی</a></li></ul></div></div><div class="div-content" id="div-content-30" style="padding:5px; height:448px; width:100%; background:#ffbe6a;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/31.png">
+			<h2 class="header">دکوراسیون</h2><ul style="float:right;"><li style="cursor:pointer;" id="a266"><a href="?content=266">دکور و تزئینات داخلی</a></li><li style="cursor:pointer;" id="a267"><a href="?content=267">نورپردازی ، روشنایی و لوستر</a></li><li style="cursor:pointer;" id="a268"><a href="?content=268">طراحی و لوازم دکوراسیون</a></li><li style="cursor:pointer;" id="a269"><a href="?content=269">کفپوش ، پارکت و کاغذ دیواری</a></li></ul></div></div><div class="div-content" id="div-content-31" style="padding:5px; height:448px; width:100%; background:#feff80;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/32.png">
+			<h2 class="header">آرایشی پیرایشی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a270"><a href="?content=270">کلینیک های زیبایی بانوان</a></li><li style="cursor:pointer;" id="a271"><a href="?content=271">سالن ها و خدمات پیرایشی آقایان</a></li><li style="cursor:pointer;" id="a272"><a href="?content=272">بوتیک و محصولات آرایشی و بهداشتی</a></li><li style="cursor:pointer;" id="a273"><a href="?content=273">آموزشگاه آرایشی بانوان</a></li><li style="cursor:pointer;" id="a274"><a href="?content=274">آموزشگاه پیرایشی آقایان</a></li></ul></div></div><div class="div-content" id="div-content-32" style="padding:5px; height:448px; width:100%; background:#ffe789;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/33.png">
+			<h2 class="header">کارخانجات</h2><ul style="float:right;"><li style="cursor:pointer;" id="a275"><a href="?content=275">آرایشی و بهداشتی</a></li><li style="cursor:pointer;" id="a276"><a href="?content=276">ابزار و یراق آلات</a></li><li style="cursor:pointer;" id="a277"><a href="?content=277">البسه</a></li><li style="cursor:pointer;" id="a278"><a href="?content=278">دارو</a></li><li style="cursor:pointer;" id="a279"><a href="?content=279">طلا و جواهر</a></li><li style="cursor:pointer;" id="a280"><a href="?content=280">ماشین صنعتی</a></li><li style="cursor:pointer;" id="a281"><a href="?content=281">ساختمان و صنایع وابسته</a></li><li style="cursor:pointer;" id="a282"><a href="?content=282">لوازم اداری</a></li><li style="cursor:pointer;" id="a283"><a href="?content=283">کالای دیجیتال</a></li><li style="cursor:pointer;" id="a284"><a href="?content=284">لوازم خانگی</a></li><li style="cursor:pointer;" id="a285"><a href="?content=285">وسایل نقلیه</a></li></ul><ul style='float:right;margin-right:25px;'></ul></div></div><div class="div-content" id="div-content-33" style="padding:5px; height:448px; width:100%; background:#ffbe6a;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/34.png">
+			<h2 class="header">لوازم ورزشی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a286"><a href="?content=286">تجهیزات ورزشی خاص</a></li><li style="cursor:pointer;" id="a287"><a href="?content=287">تجهیزات ورزشی عام</a></li></ul></div></div><div class="div-content" id="div-content-34" style="padding:5px; height:448px; width:100%; background:#98FF98;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/35.png">
+			<h2 class="header">فروشگاه اینترنتی</h2><ul style="float:right;"><li style="cursor:pointer;" id="a288"><a href="?content=288">کامپیوتر: سخت افزار</a></li><li style="cursor:pointer;" id="a289"><a href="?content=289">کامپیوتر: نرم افزار</a></li><li style="cursor:pointer;" id="a290"><a href="?content=290">آموزشی مشاوره</a></li><li style="cursor:pointer;" id="a291"><a href="?content=291">ابزار تبلیغاتی</a></li><li style="cursor:pointer;" id="a292"><a href="?content=292">گوشی تلفن همراه</a></li><li style="cursor:pointer;" id="a293"><a href="?content=293">خودرویی</a></li><li style="cursor:pointer;" id="a294"><a href="?content=294">آرایشی بهداشتی</a></li><li style="cursor:pointer;" id="a295"><a href="?content=295">زیور آلات و کادویی</a></li><li style="cursor:pointer;" id="a296"><a href="?content=296">پوشاک مردانه</a></li><li style="cursor:pointer;" id="a297"><a href="?content=297">پوشاک زنانه</a></li><li style="cursor:pointer;" id="a298"><a href="?content=298">کیف و کفش</a></li></ul><ul style='float:right;margin-right:25px;'><li style="cursor:pointer;" id="a299"><a href="?content=299">عطر و ادکلن</a></li><li style="cursor:pointer;" id="a300"><a href="?content=300">امنیت و دوربین مدار بسته</a></li><li style="cursor:pointer;" id="a301"><a href="?content=301">خدمات وب و اینترنت پرسرعت</a></li></ul></div></div><div class="div-content" id="div-content-35" style="padding:5px; height:448px; width:100%; background:;display:none;border:3px solid lightgray;border-radius:10px;">
+		<div style="margin:50px;">
+			<img class="photogram" src="img/icon/">
+			<h2 class="header"></h2><ul style="float:right;"></ul></div></div><style>
+							#pn {
+								display: none;
+							}
+						</style><span id="pn" style="display:show;">
+
+<h4>کل صفحات (0)</h4><a href='?content=187&page=2'>بعدی &raquo;</a>
+</span>
+
+
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+
+
+
+</body>
+
+
+					
+<script>
+function showUser4(str) {
+  if (str=="") {
+	document.getElementById("txtHint").innerHTML="";
+	return;
+  }
+  if (window.XMLHttpRequest) {
+	// code for IE7+, Firefox, Chrome, Opera, Safari
+	xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+	if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	  document.getElementById("txtHint4").innerHTML=xmlhttp.responseText;
+	}
+  }
+  xmlhttp.open("GET","getuser.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
+
+
+<script>
+function showUser3(str) {
+  if (str=="") {
+	document.getElementById("txtHint").innerHTML="";
+	return;
+  }
+  if (window.XMLHttpRequest) {
+	// code for IE7+, Firefox, Chrome, Opera, Safari
+	xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+	if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	  document.getElementById("txtHint3").innerHTML=xmlhttp.responseText;
+	}
+  }
+  xmlhttp.open("GET","getuser.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
+
+
+<script>
+function showUser2(str) {
+  if (str=="") {
+	document.getElementById("txtHint").innerHTML="";
+	return;
+  }
+  if (window.XMLHttpRequest) {
+	// code for IE7+, Firefox, Chrome, Opera, Safari
+	xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+	if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	  document.getElementById("txtHint2").innerHTML=xmlhttp.responseText;
+	}
+  }
+  xmlhttp.open("GET","getuser.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>
+
+
+
+
+<script>
+function showUser1(str) {
+  if (str=="") {
+	document.getElementById("txtHint").innerHTML="";
+	return;
+  }
+  if (window.XMLHttpRequest) {
+	// code for IE7+, Firefox, Chrome, Opera, Safari
+	xmlhttp=new XMLHttpRequest();
+  } else { // code for IE6, IE5
+	xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+  xmlhttp.onreadystatechange=function() {
+	if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	  document.getElementById("txtHint1").innerHTML=xmlhttp.responseText;
+	}
+  }
+  xmlhttp.open("GET","/getuser.php?q="+str,true);
+  xmlhttp.send();
+}
+</script>

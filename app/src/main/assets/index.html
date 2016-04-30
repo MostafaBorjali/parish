@@ -1,0 +1,194 @@
+<head>
+	<meta charset="utf-8">
+	<title>شهری با اقتصاد شکوفا</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="jquery.min.js"></script>
+		<script src="script2.js"></script>
+		<script src="script.js"></script>
+		<style type="text/css">
+			#center{
+				margin: auto;
+			}
+			#qr{
+				margin-top: 50px;
+				text-align: center;
+			}
+		</style>
+		<script>
+			$(document).ready(function(){
+				var winheight = $(window).height();
+				var object = $('#center').height();
+				var h = winheight/2-(object/2)-50;
+				$("#center").css("padding-top", h+'px');
+
+				$(window).resize(function(){
+					winheight = $(window).height();
+					h = winheight/2-(object/2)-50;
+					$("#center").css("padding-top", h+'px');
+				});
+
+				setInterval(function(){
+					winheight = $(window).height();
+					object = $('#center').height();
+					if (h < winheight/2-(object/2)-55 || h > winheight/2-(object/2)-45) {
+						h = winheight/2-(object/2)-50;
+						$("#center").css("padding-top", h+'px');
+					};
+				}, 10);
+
+
+
+			$(document).ready(function(){
+				var width = $('#center').width();
+				$("#center").css("height", width+'px');
+
+				$(window).resize(function(){
+					height = $(window).height();
+					h = height/2-(width/2)-50;
+					$("#center").css("padding-top", h+'px');
+				});
+
+				setInterval(function(){
+					height = $(window).height();
+					width = $('#center').height();
+					if (h < height/2-(width/2)-55 || h > height/2-(width/2)-45) {
+						h = height/2-(width/2)-50;
+						$("#center").css("padding-top", h+'px');
+					};
+				}, 10);
+			});
+		</script>
+		<script type="text/javascript">
+			$(function() {
+				$('.map').maphilight();
+			});
+		</script>
+
+		<style>
+					.table{
+						margin-right:-40px;
+						margin-top:128px;
+					}
+					.td{
+						border:3px solid rgb(32,64,128);
+						box-shadow: 0px 0px 30px rgb(64,128,256) inset;
+						border-radius:100px;
+						text-align:center;
+						height:85px;
+						width:80px;
+						text-shadow: 0px 0px 2px lightblue;
+						background: rgba(200,200,255,0.5);
+					}
+					.td a{
+						color:darkblue;
+						text-decoration: none;
+					}
+					.td a:hover{
+						color:blue;
+						text-decoration: underline;
+						text-shadow:0px 0px 10px black;
+					}
+
+
+.text-slider {
+	position: relative;
+	overflow: hidden;
+}
+
+.text-slider ul {
+	position: relative;
+	list-style: none;
+	width: 400px;
+}
+
+.text-slider ul li {
+	width: 400px;
+	position: relative;
+	display: block;
+	text-align: center;
+	color: black;
+}
+
+		</style>
+		<script>
+$(document).ready(function(){
+		$("#div1").load("full-width-slider.source.html");
+});
+</script>
+  </head>
+  <body>
+	<div id="div1"></div>
+
+	
+
+
+<p style="margin-top:10px;font-size:13px; text-align:center;"><b>کاربر مهمان؛ به</b> <span style="color:#8a5800;">شهری با اقتصاد شکوفا</span> <b>خوش آمدید. </b> <b style="padding-right:20px">سخن بزرگان:</b> <span style="color:#8a5800;">افرادی که توانایی لبخند زدن و خندیدن دارند، موجوداتی برتر هستند.</span></p>
+
+<!--
+	<div style="background:red;font-size: 20px;">
+
+			<script src="clock.js"></script>
+
+			<div id="clock"></div>
+			
+	</div>
+-->
+
+  
+<div id="titles">عناوین <img src="images/arrow.gif" id="arrow"></div>
+	<div id="list" style="position:absolute;">
+		<div class="list"><a href="/">صفحه ی اصلی</a></div>
+		<div class="list"><a href="about.php">درباره‌ی ما</a></div>
+		<div class="list"><a href="support.php">حامیان پروژه</a></div>
+		<div class="list"><a href="resellers.php">شبکه نمایندگان</a></div>
+		<div class="list"><a href="newsblog.php">خبرنامه</a></div>
+		<div class="list"><a href="contact.php">ارتباط با ما</a></div>
+		<div class="list"><a onclick="$('#login').fadeIn('slow');$('#loginin').fadeIn('slow');">ورود اعضا</a></div>
+		<div class="list"><a href="rules.php">قوانین سایت</a></div>
+		<div class="list"><a href="signup.php">سفارش خرید کارت</a></div>
+		<div class="list"><a href="help.php">راهنما</a></div>
+	</div>
+</div>
+<div id="login" style="width:100%;height:100%;left:0px;top:0px;background:black;z-index:100000;position:fixed;opacity:0.7;display:none;">
+				</div>
+				<div id="loginin" style="position:fixed;width:512px;right:30%;height:512px;top:20%;text-align:center;background:silver;border:1px solid #2a2a2a;border-radius:15px;padding:20px;z-index:1000000;display:none;">
+					<img src="images/x.png" style="cursor:pointer;margin-right:-520px;margin-top:-20px;border-radius:100;width:30px;" onclick="$('#login').fadeOut('slow');$('#loginin').fadeOut('slow');">
+					<h1 style="color:darkgreen;">ورود اعضا</h1>
+					<form action="login.php" method="post">
+						<table style="margin-top:50px;">
+							<tr>
+								<td style="padding:20px 0px;">شناسه</td>
+								<td style="padding:20px 0px;"><input type="text" name="name" style="width:400px;height:35px;padding:5px;"></td>
+							</tr>
+							<tr>
+								<td style="padding:20px 0px;">کلمه‌ی عبور</td>
+								<td style="padding:20px 0px;"><input type="password" name="pass" style="width:400px;height:35px;padding:5px;"></td>
+							</tr>
+							<tr>
+								<td style="padding:5px;">
+									<input type="hidden" name="path" value="/index.php">
+								</td>
+								<td>
+									<button style="padding:10px;float:left;">ورود</button>
+								</td>
+						</table>
+					</form>
+					<hr style="width:75%;margin:30px auto 100px auto;">
+					<a href="signup.php" style="color:black;shadow:0px 0px 3px white;margin:30px auto auto auto; border:1px solid orange; padding:10px 30px; background:#fdfdfd;">ثبت نام کنید</a>
+				</div>
+
+		<div id="center">
+			<div style="margin:auto;text-align:center; border-radius:256px 256px 256px 256px; width:500px; height:500px; top:0px; text-align:center;">
+				<div id="map-container">
+					<div class="map-container" style="background:transparent url("img/globe.png"); background-size:100% 100%;">
+						<div style="width:500px; position:relative; padding-right:55px; padding-top:75px;padding-bottom:50px">
+							<a href="./page2.html"><img src="images/iran.png" class="map" id="map" usemap="#d"></a>
+							<p id="ostan" style="position:fixed;"></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		<div>
+
+  </body>
+</html>
